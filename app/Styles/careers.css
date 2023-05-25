@@ -1,0 +1,18 @@
+/* 295 */
+.career-box {
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+/* 535 */
+.bred {
+    position: relative;
+  }
+  /* 538 */
+  .bred h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

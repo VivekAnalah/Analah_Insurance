@@ -1,0 +1,47 @@
+
+
+/* 337 */
+.termLife::after {
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    z-index: 12;
+    width: 0%;
+    content: "";
+    border-bottom: 1px solid #2a44a9;
+  }
+  /* 346 */
+  .headingLine {
+    border-bottom: 5px solid #2a44a9;
+    position: relative;
+    margin-top: -1px;
+  }
+  /* 351 */
+  .headingLine h2 {
+    position: absolute;
+    left: 13%;
+    bottom: 0;
+    width: max-content;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 17px 50px;
+    color: #ffffff;
+    background: #2a44a9;
+    border-radius: 30.5px 30.5px 0px 0px;
+    margin-bottom: -5px;
+  }
+  /* 1376 */
+  @media (max-width: 640px) {
+   
+    .headingLine h2 {
+      margin-left: 0;
+      width: 100%;
+      left: 0;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 12px 20px;
+      margin-bottom: -5px;
+    }
+    
+  }
