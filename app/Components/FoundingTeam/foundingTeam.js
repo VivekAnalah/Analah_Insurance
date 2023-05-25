@@ -1,4 +1,4 @@
-import "../../Styles/FoundingTeam.css"
+import "../../Styles/foundingTeam.css"
 
 
 function FoundingTeam() {
