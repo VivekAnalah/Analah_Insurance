@@ -106,6 +106,10 @@ function HealthInsurance() {
         keyTerms={keyTerms}
         quotes={"Get Free Quotes"}
         quotes_link = {"https://health.analahinsurance.com/input/basic-details"}
+        why={false}
+        whyText ={[]}
+        add_ons_array = {[]}
+        document_data = {[]}
       />
     </div>
   );

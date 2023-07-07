@@ -111,6 +111,8 @@ function TwoWheeler() {
         twoWheel={true}
         quotes = {"Get Free Quotes"}
         quotes_link ={"https://bike.analahinsurance.com/bike/lead-page"}
+        why={false}
+        whyText ={[]}
       />
     </div>
   );

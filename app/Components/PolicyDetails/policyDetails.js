@@ -1,6 +1,7 @@
 // import { useMediaQuery } from "@mui/material";
 import "../../Styles/policyDetails.css";
 import Footer from "../footer";
+import KnowMore from "./knowMoreSection";
 
 function PolicyDetails({
   head,
@@ -30,6 +31,18 @@ function PolicyDetails({
   quotes_link,
   helping_verb,
   no_benefit,
+  isRequired ,
+  whyRequired_head ,
+  whyRequired_Text ,
+  what,
+  whatText,
+  whatHeadingText,
+  whatDefinition,
+  gridText,
+  gridHeader,
+  document_data,
+  add_ons_array
+
 }) {
   // const matches = useMediaQuery("(max-width:500px)");
 
@@ -40,6 +53,8 @@ function PolicyDetails({
 
   return (
     <div>
+      {/* Top Section */}
+
       <div
         id="insurance-scroll"
         className=" mx-auto lg:pb-[200px] md:pb-[150px] sm:pb-[120px] pb-[120px]   "
@@ -104,7 +119,7 @@ function PolicyDetails({
           className="items-center  w-[100%]   absolute lg:top-[-180px] md:top-[-150px] sm:top-[-120px] top-[-120px] lg:pl-[25%] lg:pr-[25%] md:pl-[20%] md:pr-[20%] sm:pl-[20%] sm:pr-[20%] pl-[5%] pr-[5%] "
           style={{ textAlign: "center" }}
         >
-          {myArr[0] === "Term" || myArr[0] === "Car" ? (
+          {myArr[0] === "Term"  ? (
             <h2 className="text-[#000000] text-center text-[16px]  md:text-[20px] sm:text-[18px] lg:text-[25px] xl:text-[28px] items-center">
               <span className="text-[#2A44A9] font-normal">{Ins_Text_1}</span>{" "}
               <span className="text-[#2A44A9] font-light">{Ins_Text_2}</span>{" "}
@@ -130,192 +145,36 @@ function PolicyDetails({
         </div>
       </div>
 
-      <div className="my-0 bg-[#F5F5F5]">
-        <div className="relative ">
-          <img
-            alt="left triangle"
-            // style={{ display: matches ? "none" : "" }}
-            src={"/rightTriangle.png"}
-            className="object-contain aspect-auto sm:w-[100px] w-[70px] absolute sm:top-[1%] top-[2.5%]  h-auto rotate-180 sm:block hidden"
-          />
-          <div className="bg-[#F5F5F5] pt-10 ml-[8.5%] mr-[8.5%] mx-auto pb-10 lg:pb-20">
-            <div>
-              <h2 className="font-semibold text-xl my-3 lg:my-5 lg:m-0 pb-8 lg:pb-11 lg:text-3xl text-center">
-                <span className=" sm:border-b-[5px] sm:pb-[15px] sm:border-[#2a44a9]">
-                  Know
-                </span>{" "}
-                more about {head}
-              </h2>
-            </div>
-            <div>
-              {RetirementInsurance ? (
-                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
-                  Retirement or Pension Plans
-                </h2>
-              ) : (
-                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
-                  {head}
-                </h2>
-              )}
-
-              <p className="text-[#595959] text-base lg:text-lg text-justify pb-7 lg:pb-14">
-                {description_1}
-
-                {description_2 ? (
-                  <>
-                    {" "}
-                    <br />
-                    <br />
-                    {description_2}
-                  </>
-                ) : (
-                  <></>
-                )}
-
-                {description_3 ? (
-                  <>
-                    <br />
-                    <br />
-                    {description_3}{" "}
-                  </>
-                ) : (
-                  <></>
-                )}
-              </p>
-              {why ? (
-                <>
-                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
-                    Why {helping_verb} {head} essential?
-                  </h2>{" "}
-                  <ul className="list-disc ml-4 mb-10">
-                    {whyText.map((item, index) => {
-                      return (
-                        <li
-                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
-                          key={index}
-                        >
-                          <span className="font-[600]">{item.desc_head}</span>{" "}
-                          {item.desc}
-                        </li>
-                      );
-                    })}
-                  </ul>{" "}
-                </>
-              ) : (
-                ""
-              )}
-              {no_benefit ? (
-                ""
-              ) : (
-                <>
-                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
-                    {benefit_head}
-                  </h2>
-                  <ul className="list-disc ml-4 mb-10">
-                    {benefits.map((item, index) => {
-                      return (
-                        <li
-                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
-                          key={index}
-                        >
-                          <span className="font-[600]">{item.desc_head}</span>{" "}
-                          {item.desc}
-                        </li>
-                      );
-                    })}
-                  </ul>{" "}
-                </>
-              )}
-
-              <div className={"my-2 h-[10px] sm:my-4 sm:h-[10px]"} />
-              {twoWheel ? (
-                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
-                  Benefits of Group Health Insurance to the Employee:
-                </h2>
-              ) : homeInsurance ? (
-                <></>
-              ) : (
-                <h2 className="text-[#2A44A9] text-xl  lg:text-2xl font-semibold mb-7">
-                  {key_feature_head}
-                </h2>
-              )}
-              {homeInsurance ? (
-                <></>
-              ) : (
-                <ul className="list-disc ml-4 pb-[32px]">
-                  {keyTerms.map((item, index) => {
-                    return (
-                      <li
-                        className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
-                        key={index}
-                      >
-                        {car && item.id == 3 ? (
-                          <>
-                            <p>
-                              <span className="font-[600]">Premiums:</span> The
-                              premiums for Car Insurance are decided on the
-                              basis of:
-                            </p>
-                            <li
-                              className={
-                                "text-[#595959] text-[14px] text-justify my-1 ml-[6%] sm:text-[16px]  sm:my-3 sm:ml-[5%]"
-                              }
-                            >
-                              The type of Vehicle, Model Number, Fuel Type,
-                              Capacity etc
-                            </li>
-                            <li
-                              className={
-                                "text-[#595959] text-[14px] text-justify my-1 ml-[6%] text-[#595959] sm:text-[16px] text-justify sm:my-3 sm:ml-[5%]"
-                              }
-                            >
-                              The city
-                            </li>
-                            <li
-                              className={
-                                "text-[#595959] text-[14px] text-justify my-1 ml-[6%] text-[#595959] sm:text-[16px] text-justify sm:my-3 sm:ml-[5%]"
-                              }
-                            >
-                              Age and profession
-                            </li>
-                            <li
-                              className={
-                                "text-[#595959] text-[14px] text-justify my-1 ml-[6%] text-[#595959] sm:text-[16px] text-justify sm:my-3 sm:ml-[5%]"
-                              }
-                            >
-                              Accessories added or any modifications made in the
-                              policy
-                            </li>
-
-                            <p
-                              className={
-                                "text-[#595959] text-[14px] text-justify my-1 font-[600] text-[#595959] sm:text-[16px] text-justify sm:my-3 font-[600]"
-                              }
-                            >
-                              These are the factors that determine Car Insurance
-                              quotes that are required to pay to buy the policy.
-                              Use Car Insurance online calculators to find the
-                              premium payable on a policy.
-                            </p>
-                          </>
-                        ) : (
-                          <>
-                            {" "}
-                            <span className="font-[600]">
-                              {item.desc_head}
-                            </span>{" "}
-                            {item.desc}
-                          </>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Know More Section */}
+      <KnowMore
+        head={head}
+        RetirementInsurance={RetirementInsurance}
+        description_1={description_1}
+        description_2={description_2}
+        description_3={description_3}
+        helping_verb={helping_verb}
+        why={why}
+        whyText={whyText}
+        no_benefit={no_benefit}
+        benefit_head={benefit_head}
+        benefits={benefits}
+        twoWheel={twoWheel}
+        homeInsurance={homeInsurance}
+        key_feature_head={key_feature_head}
+        keyTerms={keyTerms}
+        car={car}
+        isRequired = {isRequired} 
+  whyRequired_head = {whyRequired_head}
+  whyRequired_Text ={whyRequired_Text}
+  what = {what}
+  whatText = {whatText}
+  whatHeadingText = {whatHeadingText}
+  whatDefinition = {whatDefinition}
+  gridHeader = {gridHeader}
+  gridText = {gridText}
+  document_data = {document_data}
+  add_ons_array = {add_ons_array}
+      />
       <div className="mt-[20px]">
         <Footer />
       </div>

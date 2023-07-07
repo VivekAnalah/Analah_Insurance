@@ -98,7 +98,11 @@ function TermLife() {
         keyTerms={keyTerms}
         quotes = {"Get Free Quotes"}
         quotes_link = {"https://term.analahinsurance.com/"}
-      />
+        why={false}
+        whyText ={[]}  
+        add_ons_array = {[]}
+        document_data = {[]}
+        />
     </div>
   );
 }

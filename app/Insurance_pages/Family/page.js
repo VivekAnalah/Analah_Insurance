@@ -89,6 +89,10 @@ function FamilyHealth() {
           benefits={benefits}
           keyTerms={keyTerms}
           quotes = {"Get Free Quotes"}
+          why={false}
+          whyText ={[]}
+          add_ons_array = {[]}
+        document_data = {[]}
         />
       </div>
     );
