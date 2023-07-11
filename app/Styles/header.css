@@ -1,12 +1,12 @@
-.activa {
+/* .active {
   color: #2a44a9;
   font-weight: 700;
   border-bottom: 3px solid #2a44a9;
-}
+} */
 
-.mycontainer {
+/* .mycontainer {
   padding: 0 50px !important;
-}
+} */
 #example-navbar-danger {
   background-color: white;
   z-index: 100;
@@ -28,7 +28,7 @@
 
 
 
-@media (min-width: 1500px) and (max-width: 1600px) {
+/* @media (min-width: 1500px) and (max-width: 1600px) {
   .mycontainer {
     padding: 0 115px !important;
   }
@@ -44,4 +44,4 @@
     margin-left: 10%;
     padding: 0 10px !important;
   }
-}
+} */

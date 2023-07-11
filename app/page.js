@@ -2,7 +2,7 @@ import "./Styles/home.css";
 import Insurance from "./Components/Insurance/Insurance";
 import ChooseUs from "./Components/ChooseUs/chooseUs";
 import OurPartner from "./Components/OurPartners/ourPartner";
-import About from "./Components/About/about";
+import About from "./Components/About/page";
 import Values from "./Components/Value/value";
 import FoundingTeam from "./Components/FoundingTeam/foundingTeam";
 import Footer from "./Components/footer";
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="hero absolute right-[0px] block mt-[35px]">
+      <div className="hero absolute right-[0px] block sm:mt-[20px]  lg:mt-[100px]">
         <div className="hero-background w-[100%] h-[500px] 2xl:h-[550px]"></div>
         <div className="">
           <img

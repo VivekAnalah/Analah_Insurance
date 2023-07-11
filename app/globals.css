@@ -20,11 +20,14 @@
   font-family: "Roboto", sans-serif;
   word-break: break-word;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Title - Border - Bottom CSS */
 .title-border-bottom {
   border-bottom: 5px solid #2a44a9;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 @media screen and (max-width: 768px) {
    .title-border-bottom {
@@ -60,4 +63,26 @@
 
 /* --------------------------------------------------- */
 
+/* Defining Font Sizes for text  */
+/* text-[14px] sm:text-[16px] 2xl:text-[18px]  */
+.text_font {
+  color: #525252;
+}
+@media only screen and (min-width: 1536px) {
+  .text_font {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1537px) and (min-width: 640px) {
+  .text_font {
+    font-size: 16px;
+    
+  }
+}
+
+@media only screen and (max-width: 639px) and (min-width: 0px) {
+  .text_font {
+    font-size: 14px;
+  }
+}
 

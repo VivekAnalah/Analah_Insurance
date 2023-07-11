@@ -1,13 +1,19 @@
 "use client";
 import  { useState } from "react";
-
+import { Alert } from "./Alert";
 
 import axios from "axios";
 
  const  Signup = () => {
+
+  const [alertVisible, setAlertVisible] = useState(false);
+  const [alertType, setAlertType] = useState('');
+  const [alertMessage, setAlertMessage] = useState('');
+  const [alertTitle, setAlertTitle] = useState('');
+
    
     const [Email_valid, setEmail_valid] = useState(true);
-    const [Pass_valid, setPass_valid] = useState(true);
+   
     const [Mob_valid, setMob_valid] = useState(true);
     
     const validStyle = {
@@ -20,22 +26,8 @@ import axios from "axios";
     const [name , setName] = useState("");
     const [email , setEmail] = useState("");
     const [mob, setMob] = useState("");
-    const [pass , setPass] = useState("");
+    
    
-    const validPass = (e) => {
-        var passw=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
-        if(e.target.value.match(passw)){
-            console.log(e.target.value)
-            setPass(e.target.value)
-            setPass_valid(true)
-            console.log("valid pass")
-        }else{
-            setPass_valid(false)
-            
-console.log("not valid pass")
-setPass("")
-        }
-    }
     const validMob = (e) =>{
         let regex = new RegExp(/(0|91)?[6-9][0-9]{9}/);
         let mobile_number = e.target.value
@@ -80,48 +72,44 @@ setEmail("")
         e.preventDefault();
       try{
 
-        let res = await axios.post( "http://localhost:8080/signup",
+        let res = await axios.post( "https://famous-teal-raven.cyclic.app/signup",
           {
             name,
             email,
-            password : pass,
+            
             mobile : mob
           }
         );
         let data = res.data;
         if(data.Status === "Ok"){
-          alert(data.msg)
-{
-  <div
-  class="mb-3 inline-flex w-full items-center rounded-lg bg-success-100 px-6 py-5 text-base text-success-700"
-  role="alert">
-  <span class="mr-2">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      class="h-5 w-5">
-      <path
-        fill-rule="evenodd"
-        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-        clip-rule="evenodd" />
-    </svg>
-  </span>
-  A simple success alert - check it out!
-</div>
-}
+
+          document.getElementById("name").value = ""; 
+          document.getElementById("email").value = "";
+          document.getElementById("mob").value = "";
+
+          setAlertType('success');
+        setAlertMessage(data.msg);
+        setAlertVisible(true);
+        setAlertTitle("Success!")
+        setTimeout(() => {
+          setAlertVisible(false);
+          window.open('https://dashboard.analahinsurance.com/customer/login', '_blank');
+        }, 2000);
+          
+
         }else{
-          alert(data.msg)
-          {
-            <div
-  class="mb-4 rounded-lg bg-danger-100 px-6 py-5 text-base text-danger-700"
-  role="alert">
-  A simple danger alert—check it out!
-</div>
-          }
+          
+          setAlertType('error');
+          setAlertMessage(data.msg);
+          setAlertVisible(true);
+          setAlertTitle("Error:")
+          setTimeout(() => {
+            setAlertVisible(false);
+           
+          }, 5000);
 
         }
-       console.log(data)
+       
       }
       catch(e){
 
@@ -208,36 +196,14 @@ setEmail("")
               placeholder="Mobile Number"
             />
           </div>
-          <div className="flex items-center border-2 py-2 px-3 rounded-2xl" style={Pass_valid ? validStyle : notValidStyle}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 text-gray-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <input
-            onChange={(e) => validPass(e)}
-              className="pl-2 outline-none border-none"
-              type="password"
-              name="pass"
-              id="pass"
-              placeholder="Password"
-              required
-            />
-          </div>
+          
           <button
           
           
           onClick={(e) => handleSignUp(e)}
             
             className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
-            disabled={!Email_valid || !Pass_valid || !Mob_valid || !name || !email ||!mob || !pass}
+            disabled={!Email_valid  || !Mob_valid || !name || !email ||!mob }
           >
             Sign Up
           </button>
@@ -248,7 +214,7 @@ setEmail("")
         </form>
 
         
-
+        {alertVisible && <Alert type={alertType} message={alertMessage} title={alertTitle} />}
 
       </div>
      

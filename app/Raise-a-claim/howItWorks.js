@@ -2,10 +2,10 @@ import "../Styles/howItWorks.css";
 import Grid_Components from "./Grid";
 
 export default function HowItWorks() {
-  console.log("server side")
+  
   return (
     <div className="  mx-auto w-[100%] max-w-[100%]" style={{backgroundColor: 'rgba(42, 68, 169, 0.04)'}}>
-    <div className="pb-20 sm:pt-20 pt-10">
+    <div className="lg:pt-[4rem] md:pt-[3rem] sm:pt-[2rem] pt-[2rem] pb-[5rem] ">
     <h2 className="font-semibold text-2xl lg:text-3xl mb-9 lg:mb-[60px] text-center" >
       <span className=" title-border-bottom text-center mb-[35px]">How </span>
       it works ?

@@ -1,7 +1,4 @@
-/* .st{
-  font-family: "Roboto", sans-serif;
-  word-break: break-word;
-} */
+
 
 .mycontainer {
   padding: 0 50px !important;
@@ -45,4 +42,21 @@
     margin-left: 10%;
     padding: 0 10px !important;
   }
+}
+
+/* Margin bottom Issue  */
+.gap_issue{
+  margin-top: 0px;
+  }
+
+@media only screen and (min-width: 1024px) {
+  .gap_issue{
+    margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 0px) {
+  .gap_issue{
+    margin-top: 10px;
+    }
 }

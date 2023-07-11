@@ -22,15 +22,11 @@ export default function Insurance({item,ins}) {
       alt=""
       className={"object-contain  w-[55%] h-[40px] lg:h-[40px] 2xl:h-[60px] mt-[10px] insurance-home-img"}
     /> }
-      {/* <img
-        src={require(`../Assets/Images/${item.img}`)}
-        alt=""
-        className={"object-contain  w-[45%] h-[40px] lg:h-[50px] xl:h-[60px] mt-[10px]"}
-      /> */}
+     
 
     <div className="contents">
-      <h6 className="text-[75%]  pt-2  font-bold  lg:w-10/12 min-h-[39px] insurance-home-text">
-      {/* xl:text-sm font-normal  font*/}
+      <h6 className="text-[85%]  pt-2  font-bold  lg:w-10/12 min-h-[39px] insurance-home-text">
+     
         {item.name}
       </h6>
     </div>

@@ -27,8 +27,8 @@ export default function OtherRoutes() {
               <h2
                 className={`${location === "/" && "active"} ${
                   matches
-                    ? "text-[12px] font-[400]"
-                    : "text-[18px] lg:text-[16px] font-[400]"
+                    ? "text-[12px] font-[400] hover:text-[#2a44a9]"
+                    : "text-[18px] lg:text-[16px] font-[400] hover:text-[#2a44a9]"
                 } `}
               >
                 Insurance Products
@@ -40,8 +40,8 @@ export default function OtherRoutes() {
               <h2
                 className={`${
                   matches
-                    ? "text-[12px] font-[400]"
-                    : "text-[18px] lg:text-[16px] font-[400]"
+                    ? "text-[12px] font-[400] hover:text-[#2a44a9]"
+                    : "text-[18px] lg:text-[16px] font-[400] hover:text-[#2a44a9]"
                 } ${location === "/Raise-a-claim" && "active"}`}
               >
                 Raise a Claim
@@ -54,8 +54,8 @@ export default function OtherRoutes() {
               <h2
                 className={`${
                   matches
-                    ? "text-[12px] font-[400]"
-                    : "text-[18px] lg:text-[16px] font-[400]"
+                    ? "text-[12px] font-[400] hover:text-[#2a44a9]"
+                    : "text-[18px] lg:text-[16px] font-[400] hover:text-[#2a44a9]"
                 } ${location === "/Become-a-PoSP" && "active"}`}
               >
                 Become a PoSP with us

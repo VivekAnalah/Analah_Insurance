@@ -7,7 +7,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
 
 export default function Splide_section({children}) {
-  console.log("Client Side");
+ 
 
   return (
    <Splide

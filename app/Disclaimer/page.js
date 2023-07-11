@@ -13,19 +13,19 @@ return (
   <div className=" ml-[5%] mr-[5%] mx-auto">
     <div className={"my-5 h-[10px] sm:my-8 sm:h-[10px]"} />
     <div className="tab_container" id="privacy">
-      <input id="tab1" type="radio" name="tabs" defaultChecked={true} />
+      <input id="tab1" type="radio" name="tabs" defaultChecked={false} />
       <label for="tab1" className="tab1 ">
       Privacy Policy
       </label>
 
-      <input id="tab2" type="radio" name="tabs" defaultChecked={false}/>
+      <input id="tab2" type="radio" name="tabs" defaultChecked={true}/>
       <label for="tab2" className="tab2">
-       Disclaimer 
+     Disclaimer 
       </label>
 
       <input id="tab3" type="radio" name="tabs" defaultChecked={false}/>
       <label for="tab3" className="tab3">
-      Terms & Conditions
+      Terms & Conditions 
       </label>
 
       <section id="content1" className="tab-content">

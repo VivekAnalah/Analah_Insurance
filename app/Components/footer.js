@@ -7,7 +7,7 @@ import { Cheacked_Context } from "../../Context/Cheacked_Context";
 
 function Footer() {
   const matches = useMediaQuery("(max-width:900px)");
-console.log("client side")
+
   const {Set_Disclaimer,  Set_T_C, Set_Privacy} = useContext(Cheacked_Context)
 
   const pageScroll = (id)=>{
@@ -43,6 +43,9 @@ console.log("client side")
    navigate("/privacy-policy")
    
   }
+
+  const Font_Style_Get = "font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]";
+  const Font_Style_Quick = "font-[300] text-[16px] text-white hover:text-[#9ad3f5]";
   return (
     <div className="">
       <Grid container spacing={2} className="bg-[#2A44A9] px-[6%] py-10">
@@ -54,59 +57,59 @@ console.log("client side")
                   <h1 className="font-[600] text-[18px] text-white">
                     Get Insured
                   </h1>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("insurnce-scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("insurnce-scroll")}>
                     <Link href="Insurance_pages/Term-Life">Term Life Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("insurnce-scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("insurnce-scroll")}>
                     <Link href="Insurance_pages/Health">Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/Family">Family Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/Group">Group Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/Car">Car Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                   <Link href="Insurance_pages/Home">Home Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                   <Link href="Insurance_pages/Retirement">Retirement Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
-                    Investment Plans
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
+                  <Link href="Insurance_pages/Investment"> Investment Plans </Link>  
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
-                    Guaranteed Returns Plans
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
+                   <Link href="Insurance_pages/Guaranteed">Guaranteed Returns Plans</Link> 
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
-                    Travel Insurance 
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
+                    <Link href="Insurance_pages/Travel"> Travel Insurance </Link> 
                   </h5>
                   <div className="bg-[#ffffff] w-[120px] h-auto flex flex-row rounded-[20px] p-2 space-x-2 items-center justify-center">
                     <a href="https://twitter.com/analahinsurance" target="_blank">
                     <img
                       src={"/twitter.png"}
                       alt="twitter"
-                      className="object-contain w-[15px] h-[15px]"
+                      className="object-contain w-[15px] h-[15px] grayscale hover:hue-rotate-90"
                     />
                     </a>
                     <a href="https://www.instagram.com/analahinsurance/?igshid=ZDdkNTZiNTM%3D" target="_blank">
                     <img
                       src={"/instagram.png"}
                       alt="instagram"
-                      className="object-contain w-[15px] h-[15px]"
+                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0"
                     />
                     </a>
                     <a href="https://www.facebook.com/analahinsurance" target="_blank">
                     <img
-                      src={"/facebook-app-symbol.png"}
+                      src={"/facebook.png"}
                       alt="facebook"
-                      className="object-contain w-[15px] h-[15px]"
+                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0"
                     />
                     </a>
                     
@@ -114,7 +117,7 @@ console.log("client side")
                     <img
                       src={"/linkedin.png"}
                       alt="linkedin"
-                      className="object-contain w-[15px] h-[15px]"
+                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0"
                     />
 
                     </a>
@@ -134,35 +137,36 @@ console.log("client side")
                     Quick Links
                   </h1>
                   
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                     <Link href={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("about")}>
-                    <Link href={"/"}>About us </Link>
+                  <h5 className={`${Font_Style_Quick}`} >
+                    <a href={"/#about"}>About us </a>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                        <Link href={"/Raise-a-claim"}>Claim</Link>
                     </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                     <Link href={"/Policy-Cancel"}>Policy Cancellation</Link>
                     
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                     <Link href={"/Become-a-PoSP"}>Become a PoSP</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                     <Link href={"/Careers"}>Careers</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("tab1")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("tab1")}>
                     <Link href={"/Privacy-Policy"} >Privacy Policy</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white"  onClick={()=>pageScroll("tab3")}>
+                  <h5 className={`${Font_Style_Quick}`}  onClick={()=>pageScroll("tab2")}>
+                  <Link href={"/Disclaimer"} > Disclaimer </Link>
+                  </h5>
+                  <h5 className={`${Font_Style_Quick}`}  onClick={()=>pageScroll("tab3")}>
                     
-                    <Link href={"/Privacy-Policy"} >Terms & Conditions </Link>
+                    <Link href={"/Term_Condition"} >Terms & Conditions </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white"  onClick={()=>pageScroll("tab2")}>
-                  <Link href={"/Privacy-Policy"} > Disclaimer </Link>
-                  </h5>
+                 
                 </div>
               </div>
             </div>
@@ -181,12 +185,31 @@ console.log("client side")
                   </h5>
                   <br />
 
-                  <h5 className="font-[600] text-[12px] sm:text-[16px] text-white">
-                    <a href="tel:+91 99208 78181">+91 99208 78181</a>
+                  <h5 className="font-[600] text-[12px] sm:text-[16px]  flex gap-2 text-white hover:text-[#9ad3f5]">
+                    <a href="tel:+91 99208 78181" className="flex gap-[6px]">
+                    <img
+                        src={"/phone.png"}
+                        alt="phone"
+                        className="object-contain w-[15px] h-[15px] mt-[2px]"
+                      />
+
+                      <span>
+                      +91 99208 78181
+                      </span>
+                     </a>
                     
                   </h5>
-                  <h5 className="font-[600] text-[12px] sm:text-[16px] text-justify text-white">
-                    <a href="mailto:contactus@analahinsurance.com">contactus@analahinsurance.com</a>
+                  <h5 className="font-[600] text-[12px] sm:text-[16px] flex gap-2 text-justify text-white hover:text-[#9ad3f5]">
+                    <a href="mailto:contactus@analahinsurance.com" className="flex gap-[6px]">
+                    <img
+                        src={"/email.png"}
+                        alt="linkedin"
+                        className="object-contain w-[15px] h-[15px] mt-[2px]"
+                      />
+
+                      <span> contactus@analahinsurance.com</span>
+              
+                     </a>
                     
                     <br />
                     
@@ -218,73 +241,74 @@ console.log("client side")
                   <h1 className="font-[600] text-[28px] text-white">
                     Get Insured
                   </h1>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/Term-Life" >Term Life Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/Health">Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/Family">Family Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/Group">Group Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/Car">Car Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                     <Link href="Insurance_pages/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                   <Link href="Insurance_pages/Home">Home Insurance</Link>
                      
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                   <Link href="Insurance_pages/Retirement">Retirement Plans</Link>
                     
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
-                    Investment Plans
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
+                  <Link href="Insurance_pages/Investment"> Investment Plans </Link>  
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
-                    Guaranteed Returns Plans
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
+                  <Link href="Insurance_pages/Guaranteed">Guaranteed Returns Plans</Link> 
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
-                    Travel Insurance 
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
+                  <Link href="Insurance_pages/Travel"> Travel Insurance </Link> 
                   </h5>
 
                 </div>
                 <div className="space-y-5">
                   <h1 className="font-[600] text-[28px] text-white" >Explore</h1>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                     <Link href={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("about")}>
-                  <Link href={"/"}>About us </Link>
+                  <h5 className={`${Font_Style_Quick}`} >
+                  <a href={"/#about"}>About us </a>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                        <Link href={"/Raise-a-claim"}>Claim</Link>
                     </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                     <Link href={"/Policy-Cancel"}>Policy Cancellation</Link>
                     
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                     <Link href={"/Become-a-PoSP"}>Become a PoSP</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("scroll")}>
                     <Link href={"/Careers"}>Careers</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("tab1")}>
+                  <h5 className={`${Font_Style_Quick}`} onClick={()=>pageScroll("tab1")}>
                     <Link href={"/Privacy-Policy"} >Privacy Policy</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white"  onClick={()=>pageScroll("tab3")}>
-                    <Link href={"/Privacy-Policy"} >Terms & Conditions </Link>
+                  <h5 className={`${Font_Style_Quick}`}  onClick={()=>pageScroll("tab2")}>
+                   <Link href={"/Disclaimer"} > Disclaimer </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white"  onClick={()=>pageScroll("tab2")}>
-                   <Link href={"/Privacy-Policy"} > Disclaimer </Link>
+                  <h5 className={`${Font_Style_Quick}`}  onClick={()=>pageScroll("tab3")}>
+                    <Link href={"/Term_Condition"} >Terms & Conditions </Link>
                   </h5>
+                  
                 </div>
               </div>
             </Grid>
@@ -307,9 +331,31 @@ console.log("client side")
                   <br />
 
                   <h5 className="font-[600] text-[16px] text-white mt-[112px]">
-                  <a href="tel:+91 99208 78181">+91 99208 78181</a>
+                  <a href="tel:+91 99208 78181" className="flex gap-[6px] hover:text-[#9ad3f5]">
+                  <img
+                        src={"/phone.png"}
+                        alt="phone"
+                        className="object-contain w-[20px] h-[20px] mt-[2px]"
+                      />
+
+<span>
+                      +91 99208 78181
+                      </span>
+                    
+                    </a>
                     <br />
-                    <a href="mailto:contactus@analahinsurance.com">contactus@analahinsurance.com</a>
+                    <a href="mailto:contactus@analahinsurance.com" className="flex gap-[6px] hover:text-[#9ad3f5]">
+                     
+                    <img
+                        src={"/email.png"}
+                        alt="email"
+                        className="object-contain w-[20px] h-[20px] mt-[2px]"
+                      />
+                    
+                    <span> contactus@analahinsurance.com</span>
+                      
+                      
+                      </a>
                     
                   </h5>
 
@@ -346,28 +392,28 @@ console.log("client side")
                       <img
                         src={"/twitter.png"}
                         alt="twitter"
-                        className="object-contain w-[25px] h-[25px]"
+                        className="object-contain w-[25px] h-[25px] grayscale  hover:grayscale-0"
                       />
                     </a>
                     <a href="https://www.instagram.com/analahinsurance/?igshid=ZDdkNTZiNTM%3D" target="_blank">
                       <img
                         src={"/instagram.png"}
                         alt="instagram"
-                        className="object-contain w-[25px] h-[25px]"
+                        className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0"
                       />
                     </a>
                     <a href="https://www.facebook.com/analahinsurance" target="_blank">
                       <img
-                        src={"/facebook-app-symbol.png"}
+                        src={"/facebook.png"}
                         alt="facebook"
-                        className="object-contain w-[25px] h-[25px]"
+                        className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0"
                       />
                     </a>
                     <a href="https://www.linkedin.com/company/analahinsurance/" target="_blank">
                       <img
                         src={"/linkedin.png"}
                         alt="linkedin"
-                        className="object-contain w-[25px] h-[25px]"
+                        className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
                     </a>
                     {/* <a  >
