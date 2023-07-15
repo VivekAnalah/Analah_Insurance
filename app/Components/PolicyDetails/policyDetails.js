@@ -1,7 +1,8 @@
-// import { useMediaQuery } from "@mui/material";
+
 import "../../Styles/policyDetails.css";
 import Footer from "../footer";
 import KnowMore from "./knowMoreSection";
+import QuoteButton from "./GetQuotesButton";
 
 function PolicyDetails({
   head,
@@ -41,15 +42,21 @@ function PolicyDetails({
   gridText,
   gridHeader,
   document_data,
-  add_ons_array
+  add_ons_array,
+  extra_data,
+  gridTopRight,
+  gridTopLeft,
+  button_overlap
 
 }) {
-  // const matches = useMediaQuery("(max-width:500px)");
+  
 
   const title = head;
   const myArr = title.split(" ");
 
   console.log(myArr[0], Ins_Text_1);
+
+ 
 
   return (
     <div>
@@ -66,8 +73,8 @@ function PolicyDetails({
         <div className="flex flex-col sm:flex-row lg:gap-[12.2%] xl:gap-[15.2%] md:gap-[8%] gap-[5%] termLife relative items-center mt-[40px] pb-[20px]">
           <div className="lg:w-[45%] sm:w-[50%] w-[90%] order-2 sm:order-1 flex flex-col  pl-[8.5%] sm:pr-[0%] pr-[8.5%]">
             <div className=" ">
-              <div className="flex items-center sm:mt-[0px] mt-[10px]">
-                <h2 className="text-[#000000] font-normal  text-[24px]  md:text-[30px] sm:text-[27px] xl:text-[32px] pb-[2%]">
+              <div className="flex items-center sm:mt-[0px] mt-[20px]">
+                <h2 className="text-[#000000] font-normal sm:text-[22px] text-[24px] 2xl:text-[32px] lg:text-[28px] md:text-[26px]  pb-[2%] ">
                   <span className="title-border-bottom">{myArr[0]}</span>{" "}
                   {myArr[1] === "Insurance" || myArr[1] === "Plans" ? (
                     <span className="text-[#2A44A9] font-medium">
@@ -79,44 +86,56 @@ function PolicyDetails({
                   <span className="text-[#2A44A9] font-medium">{myArr[2]}</span>
                 </h2>
               </div>
-              <h3 className=" text-base lg:text-2xl sm:font-[500] text-[18px] pt-[4%] text-[#000] pb-[2%]">
+              <h3 className=" text-base text-[16px] 2xl:text-[20px] lg:text-[18px] md:text-[16px]  sm:text-[14] sm:font-[500] lg:pt-[2rem] pt-[1rem] text-[#000] pb-[2%]">
                 {subhead}
               </h3>
-              <ul className="font-light text-xl xl:text-2xl text-[#595959] list-outside ... list-disc ml-[15px]  ">
-                <li className="pb-[7px] text-[1.2rem]">{list1}</li>
-                <li className="pb-[7px] text-[1.2rem]">{list2}</li>
-                <li className=" pb-[7px] text-[1.2rem]">{list3}</li>
-                <li className="text-[1.2rem]">{list4}</li>
+              <ul className="font-light text-[16px] 2xl:text-[20px] lg:text-[18px] md:text-[16px]  sm:text-[14] text-[#595959] list-outside ... list-disc ml-[15px]  ">
+                <li className="pb-[7px] ">{list1}</li>
+                <li className="pb-[7px] ">{list2}</li>
+                <li className=" pb-[7px] ">{list3}</li>
+                <li className="">{list4}</li>
               </ul>
             </div>
           </div>
           <div className="order-1 sm:order-2 flex flex-col items-center xl:ml-[10%] lg:ml-[5%]">
-            <img
-              src={`/${img}.png`}
-              alt={head}
-              className=" lg:w-[320px] md:w-[250px] sm:w-[250px] w-[60%]  "
-            />
+          {img === "Travel_ins" ? (
+              <img
+                src={`/${img}.png`}
+                alt={head}
+                className=" lg:w-[400px] md:w-[350px] sm:w-[350px] w-[80%] xl:ml-[-50%] lg:ml-[-5%] "
+              />
+            ) : img === "Group_ins" ? <> <img
+            src={`/${img}.png`}
+            alt={head}
+            className=" lg:w-[300px] sm:w-[250px] w-[60%] "
+          />  </> : (
+              <img
+                src={`/${img}.png`}
+                alt={head}
+                className=" lg:w-[320px] md:w-[250px] sm:w-[250px] w-[60%]"
+              />
+            )}
+           
           </div>
         </div>
       </div>
       <div className="flex justify-center items-center relative xl:top-[-80px] lg:top-[-80px] md:top-[-80px] sm:top-[-60px] top-[-60px] ">
-        <div className="text-center items-center   h-[20px] absolute top-[0%] ">
+      {button_overlap ? <><div className="button_overlap text-center items-center h-[20px] absolute top-[0%] sm:mt-[0] mt-[15px]">
           <a href={quotes_link} target="blank">
-            <button
-              className="justify-center items-center py-2 text-[#FFFFFF] px-10 sm:text-[18px] text-[15px] "
-              style={{
-                background: "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
-                borderRadius: 11,
-              }}
-            >
-              {quotes}
-            </button>
+            <QuoteButton quotes = {quotes}/>
           </a>
-        </div>
+        </div></>: <><div className="text-center items-center h-[20px] absolute top-[0%] ">
+          <a href={quotes_link} target="blank">
+          <QuoteButton quotes = {quotes}/>
+          </a>
+        </div></>}
+        
+        
+        
       </div>
       <div className="relative top-[0px]">
         <div
-          className="items-center  w-[100%]   absolute lg:top-[-180px] md:top-[-150px] sm:top-[-120px] top-[-120px] lg:pl-[25%] lg:pr-[25%] md:pl-[20%] md:pr-[20%] sm:pl-[20%] sm:pr-[20%] pl-[5%] pr-[5%] "
+          className="items-center  w-[100%] absolute lg:top-[-180px] md:top-[-150px] sm:top-[-120px] top-[-120px] lg:pl-[25%] lg:pr-[25%] md:pl-[20%] md:pr-[20%] sm:pl-[20%] sm:pr-[20%] pl-[5%] pr-[5%] "
           style={{ textAlign: "center" }}
         >
           {myArr[0] === "Term"  ? (
@@ -141,7 +160,7 @@ function PolicyDetails({
               "linear-gradient(-5.38deg, rgb(42, 68, 168) -107.1%, rgba(255, 255, 255, 0.06) 45.41%)",
           }}
         >
-          {/* <h2>Know more about {head}</h2> */}
+        
         </div>
       </div>
 
@@ -174,6 +193,9 @@ function PolicyDetails({
   gridText = {gridText}
   document_data = {document_data}
   add_ons_array = {add_ons_array}
+  extra_data = {extra_data}
+  gridTopRight = {gridTopRight}
+  gridTopLeft = {gridTopLeft} 
       />
       <div className="mt-[20px]">
         <Footer />

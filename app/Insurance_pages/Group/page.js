@@ -97,6 +97,7 @@ function GroupInsurance() {
           whyText ={[]}
           add_ons_array = {[]}
         document_data = {[]}
+        button_overlap = {true}
         />
       </div>
     );

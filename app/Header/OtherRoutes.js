@@ -9,7 +9,6 @@ import Auth from "./Auth";
 export default function OtherRoutes() {
   const matches = useMediaQuery("(max-width:500px)");
   const location = usePathname();
-  console.log("client side");
 
   const { navbarOpen } = useContext(Cheacked_Context);
   console.log(navbarOpen);

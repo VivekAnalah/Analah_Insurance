@@ -203,10 +203,11 @@ function Travel() {
           "Traveling is a source of joy and relaxation, allowing us to break free from our routines and create precious memories with loved ones. However, unexpected emergencies can disrupt even the most well-planned trips, leading to both mental and financial stress. Navigating unfamiliar territories during such times can be challenging, and the additional expenses can strain your budget. To mitigate the risks associated with travel, it is highly recommended to have a comprehensive travel insurance plan. Whether you're planning to travel for business or leisure and seeking the top travel insurance options in India, continue reading to discover detailed information about leading travel insurance companies and the various plans they provide."
         }
         no_benefit = {true}
+        homeInsurance = {true}
         benefits={[]}
         keyTerms={[]}
         quotes = {"Get Free Quotes"}
-        quotes_link = {"https://term.analahinsurance.com/"}
+        quotes_link = {""}
         why={false}
         whyText ={[]} 
         isRequired = {false}
@@ -216,8 +217,11 @@ function Travel() {
           whatText = {whatText}
           whatHeadingText = {"A travel insurance policy provides coverage for potential financial losses during your travel, offering protection throughout your trip and assisting you in dealing with any unexpected financial emergencies that may arise."}
           whatDefinition = {"A travel insurance policy provides coverage for potential financial losses during your travel, offering protection throughout your trip and assisting you in dealing with any unexpected financial emergencies that may arise."}
+          gridTopLeft = {"Coverage Benefit"}
+        gridTopRight = {"Meaning"}
           gridHeader={"What is covered in Travel Insurance?"}
           gridText={gridText}
+          button_overlap = {true}
           />
     </div>
   );

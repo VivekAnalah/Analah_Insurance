@@ -45,3 +45,32 @@
     }
     
   }
+
+  /* 1670 */
+  @media only screen and (max-width: 1294px) and (min-width: 1280px) {
+    .button_overlap {
+      margin-top: 27px;
+    }
+  }
+  
+  /* 1676 */
+  @media only screen and (max-width: 1155px) and (min-width: 1024px) {
+    .button_overlap {
+      margin-top: 27px;
+    }
+  }
+
+/* 1696 */
+  @media only screen and (max-width: 640px) and (min-width: 411px) {
+    .button_overlap {
+      margin-top: 5px;
+    }
+  }
+
+
+  /* 1701 */
+  @media only screen and (max-width: 342px) and (min-width: 0px) {
+    .button_overlap {
+      margin-top: 13px;
+    }
+  }

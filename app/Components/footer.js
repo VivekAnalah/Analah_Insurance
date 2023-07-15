@@ -76,6 +76,9 @@ function Footer() {
                     <Link href="Insurance_pages/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
                   <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
+                    <Link href="Insurance_pages/Travel"> Travel Insurance </Link> 
+                  </h5>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                   <Link href="Insurance_pages/Home">Home Insurance</Link>
                   </h5>
                   <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
@@ -87,9 +90,7 @@ function Footer() {
                   <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                    <Link href="Insurance_pages/Guaranteed">Guaranteed Returns Plans</Link> 
                   </h5>
-                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
-                    <Link href="Insurance_pages/Travel"> Travel Insurance </Link> 
-                  </h5>
+                  
                   <div className="bg-[#ffffff] w-[120px] h-auto flex flex-row rounded-[20px] p-2 space-x-2 items-center justify-center">
                     <a href="https://twitter.com/analahinsurance" target="_blank">
                     <img
@@ -260,6 +261,9 @@ function Footer() {
                     <Link href="Insurance_pages/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
                   <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
+                  <Link href="Insurance_pages/Travel"> Travel Insurance </Link> 
+                  </h5>
+                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                   <Link href="Insurance_pages/Home">Home Insurance</Link>
                      
                   </h5>
@@ -273,9 +277,7 @@ function Footer() {
                   <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
                   <Link href="Insurance_pages/Guaranteed">Guaranteed Returns Plans</Link> 
                   </h5>
-                  <h5 className={`${Font_Style_Get}`} onClick={()=>pageScroll("scroll")}>
-                  <Link href="Insurance_pages/Travel"> Travel Insurance </Link> 
-                  </h5>
+                  
 
                 </div>
                 <div className="space-y-5">
