@@ -1,25 +1,11 @@
 
 
-// import React, {  useEffect, useRef } from "react";
-// import { useRouter } from "next/router";
-// import { aboutSection } from "./aboutSection";
-
 function About() {
-  // const targetDivRef = useRef(null);
- 
-  // const router = useRouter();
-  // const currentHash = router.asPath.split('#')[1];
 
-  // useEffect(() => {
-  //   console.log(location)
-  //   if (currentHash=== "#about") {
-  //     targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // }, []);
     return (
       <div className="bg-[#FAFFFF] mt-[0px] scroll-mt-[100px]" id="about"  >
         
-      {/* <aboutSection /> */}
+     
       <div className="flex space-y-5 flex-col justify-center pt-5">
     <h2 className="font-semibold text-2xl lg:text-3xl text-center m-auto lg:pb-[30px] pb-[0px]">
       <span className="title-border-bottom">Abou</span>t Us

@@ -14,8 +14,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <CheackedContextProvider >
       <body className={`${inter.className} body` }>
+        <div className="relative" id="top-scroll">
         <Header />
-        {children}</body>
+        {children}
+        </div>
+        </body>
         </CheackedContextProvider>
     </html>
   )

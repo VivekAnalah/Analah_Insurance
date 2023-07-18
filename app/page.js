@@ -67,7 +67,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="relative" id="top-scroll" style={{ border: "solid white" }}>
+    <div >
       {/* <Header /> */}
       <div className="main-hero">
         <div className="sm:pt-10  pt-[-20] relative homeLeft lg:pl-[6.5%] pl-[8.5%] sm:mt-[70%] mt-[80%] md:mt-[0%]">

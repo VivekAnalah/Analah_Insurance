@@ -8,9 +8,7 @@ import { Cheacked_Context } from "../../Context/Cheacked_Context";
 export default function Logo({ children }) {
   const matches = useMediaQuery("(max-width:500px)");
 
-  children[0].props.className = matches
-    ? " ml-[-20px] mt-[0px] w-[230px]  justify-start"
-    : "object-contain w-[185px] pt-0";
+  children[0].props.className = " ml-[-20px] mt-[0px] w-[230px]  justify-start sm:ml-[0px] sm:mt-[0px] sm:justify-center sm:object-contain sm:w-[185px] sm:pt-0";
 
   const { navbarOpen, Set_NavbarOpen } = useContext(Cheacked_Context);
 

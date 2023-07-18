@@ -4,13 +4,13 @@ import "../Styles/header.css";
 
 
 export default function Header() {
-  console.log("server side");
+
   const divStyles = {
     boxShadow: "0px 2px 4px 0 rgb(0 0 0 / 20%)",
-    // marginBottom:'50px',
+   
     marginRight: "0",
   };
-  // ---remove ---
+
 
   return (
     <>

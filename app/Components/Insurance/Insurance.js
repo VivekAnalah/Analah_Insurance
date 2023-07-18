@@ -1,5 +1,5 @@
 import Linking from "./Linking";
-// import Link from "next/link";
+import "../../Styles/insurance.css";
 export default function Insurance({item,ins}) {
     let insuranceName = ins;
   const myArr = insuranceName.split(" ");
