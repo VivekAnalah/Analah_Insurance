@@ -1,6 +1,99 @@
-.mycontainer_raise {
-    /* border: 1px solid red; */
-    width: 90.6%;
+.backgroundStyle {
+  background: linear-gradient(
+    2deg,
+    rgb(237 244 251) 0%,
+    rgba(247, 242, 242, 0.06) 59.9%
+  );
+  padding-bottom: 50px;
+}
+
+.textStyleRaise {
+  font-size: 16px;
+  font-style: normal;
+
+  line-height: normal;
+}
+
+.ClaimImage {
+  width: auto;
+  height: auto;
+  max-width: 85%;
+}
+
+@media (min-width: 640px) and (max-width: 1389px) {
+  .ClaimImage {
+    max-width: 100%;
   }
+}
+
+@media (min-width: 531px) and (max-width: 639px) {
+  .ClaimImage {
+    width: 156px;
+    height: 147px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 530px) {
+  .raiseButtonContainer {
+    position: absolute;
+    bottom: 15%;
+  }
+  #raise-button {
+    /* width: 50%; */
+    font-size: 12px;
+  }
+  .ClaimImage {
+    width: 100px;
+    height: 147px;
+    max-width: 100%;
+  }
+
+  .backgroundStyle {
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 399px) {
+  .raiseButtonContainer {
+    position: relative;
+    
+    
+  }
+
+  .ClaimImage {
+    display: none;
+  }
+
+  .leftImage {
+    display: none;
+  }
+
+  .RightImage {
+    display: none;
+  }
+
+  .backgroundStyle {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .textStyleRaise {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 441px) and (max-width: 767px) {
+  .textStyleRaise {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 440px) {
+  .textStyleRaise {
+    font-size: 12px;
+  }
+}
 
   

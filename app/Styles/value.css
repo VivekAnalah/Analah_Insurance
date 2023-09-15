@@ -1,5 +1,109 @@
 /* 1574 */
 .insurance_value_button_container {
-    position: relative;
+  position: relative;
+}
+
+.textStyleValue {
+  color: #595959;
+  text-align: center;
+
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.titleStyle {
+  color: #4481e4;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.topicValue {
+  margin: auto;
+  text-align: center;
+  color: #4481e4;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.topic2Value {
+  color: #000;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .textStyleValue {
+    font-size: 14px;
   }
+  .titleStyle {
+  font-size: 22px;
+  }
+
+ 
+  .topicValue {
+    font-size: 28px;
+  }
+  .topic2Value {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .topicValue {
+    font-size: 26px;
+  }
+  .topic2Value {
+    font-size: 26px;
+  }
+
+  .titleStyle {
+    font-size: 20px;
+    }
+}
+
+@media (min-width: 441px) and (max-width: 600px) {
+ 
+  .titleStyle {
+    font-size: 20px;
+    }
   
+  .textStyleValue {
+    font-size: 14px;
+  }
+
+  .topicValue {
+    font-size: 26px;
+  }
+  .topic2Value {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 440px) {
+ 
+  .titleStyle {
+    font-size: 18px;
+    }
+  
+  .textStyleValue {
+    font-size: 12px;
+  }
+
+  .topicValue {
+    font-size: 24px;
+  }
+  .topic2Value {
+    font-size: 24px;
+  }
+}

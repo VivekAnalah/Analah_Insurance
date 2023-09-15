@@ -1,37 +1,43 @@
 /* 105 */
 .tab_container {
-    overflow: hidden;
-    margin: 0 auto;
-    /*    padding-top: 70px;*/
-    position: relative;
-    border: 2px solid #2a44a9;
-    border-radius: 15px;
-  }
-  /* 115 */
-  .tab_container input,
+  overflow: hidden;
+  margin: 0 auto;
+  /*    padding-top: 70px;*/
+  position: relative;
+  
+  border-radius: 0px 15px 15px 15px;
+  border: 1px solid #4C8CE7;
+  background: rgba(76, 140, 231, 0.04);
+}
+.tab-content{
+  background: rgba(76, 140, 231, 0.04);
+}
+/* 115 */
+.tab_container input,
 .tab_container section {
-  clear: both;
-  padding-top: 10px;
-  display: none;
+clear: both;
+padding-top: 10px;
+display: none;
 }
 /* 122 */
 
-label {
-  font-weight: 700;
-  font-size: 18px;
-  display: block;
-  float: left;
-  width: 25%;
-  padding: 0.5em;
-  color: #2a44a9;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
+.labelDiv {
+font-weight: 700;
+font-size: 18px;
+display: block;
+float: left;
+width: 25%;
+padding: 0.5em;
+color: #4C8CE7;
+cursor: pointer;
+text-decoration: none;
+text-align: center;
 
-  border-bottom: 2px solid #2a44a9;
+border-bottom: 1px solid #4C8CE7;
 
-  border-right: 2px solid #2a44a9;
-  background: #fff;
+border-right: 1px solid #4C8CE7;
+background: #fff;
+
 }
 /* 140 */
 #tab1:checked ~ #content1,
@@ -39,87 +45,84 @@ label {
 #tab3:checked ~ #content3,
 #tab4:checked ~ #content4,
 #tab5:checked ~ #content5 {
-  display: block;
-  padding: 40px;
-  background: #fff;
-  color: #595959;
-  border-radius: 15px;
+display: block;
+padding: 40px;
+
+color: #595959;
+border-radius: 15px;
 }
 /* 152 */
-.tab_container .tab-content p,
-.tab_container .tab-content h3 {
-  -webkit-animation: fadeInScale 0.7s ease-in-out;
-  -moz-animation: fadeInScale 0.7s ease-in-out;
-  animation: fadeInScale 0.7s ease-in-out;
+.tab_container .tab-content p {
+-webkit-animation: fadeInScale 0.7s ease-in-out;
+-moz-animation: fadeInScale 0.7s ease-in-out;
+animation: fadeInScale 0.7s ease-in-out;
 }
 /* 158 */
 .tab_container .tab-content h3 {
-  text-align: center;
+text-align: center;
 }
 /* 162 */
-.tab_container [id^="tab"]:checked + label {
-  background: #2a44a9;
-  /*  box-shadow: inset 0 3px #0CE;*/
-  color: #fff;
+.tab_container [id^="tab"]:checked + a > label{
+background: #4C8CE7;
+/*  box-shadow: inset 0 3px #0CE;*/
+color: #fff;
 }
 /* 168 */
 
 .tab_container [id^="tab"]:checked + label .fa {
-  color: #fff;
+color: #fff;
 }
-/* 177 */
-.tab1 {
+
+
+/* 180 */
+.tab3 {
+  border-radius: 0 0px 11px 0px;
+}
+/* 251 */
+/*Content Animation*/
+@keyframes fadeInScale {
+0% {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+100% {
+  transform: scale(1);
+  opacity: 1;
+}
+}
+/* 272 */
+.tab_container p {
+  margin: inherit;
+  margin-bottom: 10px;
+}
+/* 276 */
+.tab_container ul,
+.posp-content ul {
+  margin-bottom: 10px;
+}
+/* 280 */
+.tab_container li,
+.posp-content li {
+  list-style-type: disc;
+  padding-inline-start: 1ch;
+  padding-left: -20px;
+  margin-left: 20px;
+}
+/* 1562 */
+@media only screen and (max-width: 900px) {
+  .tab_container label {
+    width: 100%;
+    padding: 5px;
+  }
+  label{
+    border-right: none;
+  }
+  .tab1 {
     border-radius: 12px 0px 0px 0px;
   }
   /* 180 */
   .tab3 {
-    border-radius: 0 0px 11px 0px;
-  }
-  /* 251 */
-  /*Content Animation*/
-@keyframes fadeInScale {
-  0% {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
+    border-radius: 0 0px 0px 0px;
   }
 }
-/* 272 */
-.tab_container p {
-    margin: inherit;
-    margin-bottom: 10px;
-  }
-  /* 276 */
-  .tab_container ul,
-  .posp-content ul {
-    margin-bottom: 10px;
-  }
-  /* 280 */
-  .tab_container li,
-  .posp-content li {
-    list-style-type: disc;
-    padding-inline-start: 1ch;
-    padding-left: -20px;
-    margin-left: 20px;
-  }
-  /* 1562 */
-  @media only screen and (max-width: 900px) {
-    .tab_container label {
-      width: 100%;
-      padding: 5px;
-    }
-    label{
-      border-right: none;
-    }
-    .tab1 {
-      border-radius: 12px 0px 0px 0px;
-    }
-    /* 180 */
-    .tab3 {
-      border-radius: 0 0px 0px 0px;
-    }
-  }

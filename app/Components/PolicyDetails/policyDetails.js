@@ -53,8 +53,8 @@ function PolicyDetails({
 
   const title = head;
   const myArr = title.split(" ");
-
-  console.log(myArr[0], Ins_Text_1);
+  const subhadText = "lg:text-[16px] md:text-[12px] text-[14px]";
+  
 
  
 

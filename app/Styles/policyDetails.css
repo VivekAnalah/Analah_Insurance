@@ -1,76 +1,93 @@
+.policyHeader{
+
+ 
+  color: #4481e4;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.policyHeader2 {
+  color: #000;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.listBox{
+  border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 40px 70px -18px rgba(0, 0, 0, 0.10);
+width: 430px;
+position: relative;
+
+}
+
+.bulletImage{
+
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  top: 18px;
+  left: 5%;
+}
 
 
-/* 337 */
-.termLife::after {
-    position: absolute;
-    bottom: 0%;
-    left: 10%;
-    z-index: 12;
-    width: 0%;
-    content: "";
-    border-bottom: 1px solid #2a44a9;
-  }
-  /* 346 */
-  .headingLine {
-    border-bottom: 5px solid #2a44a9;
-    position: relative;
-    margin-top: -1px;
-  }
-  /* 351 */
-  .headingLine h2 {
-    position: absolute;
-    left: 13%;
-    bottom: 0;
-    width: max-content;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 20px;
-    padding: 17px 50px;
-    color: #ffffff;
-    background: #2a44a9;
-    border-radius: 30.5px 30.5px 0px 0px;
-    margin-bottom: -5px;
-  }
-  /* 1376 */
-  @media (max-width: 640px) {
-   
-    .headingLine h2 {
-      margin-left: 0;
-      width: 100%;
-      left: 0;
-      font-size: 14px;
-      line-height: 16px;
-      padding: 12px 20px;
-      margin-bottom: -5px;
-    }
-    
-  }
 
-  /* 1670 */
-  @media only screen and (max-width: 1294px) and (min-width: 1280px) {
-    .button_overlap {
-      margin-top: 27px;
-    }
-  }
+.sideDot{
+  background-color: #a3a7a9;
+  border-radius: 50%;
+    height: 10px;
   
-  /* 1676 */
-  @media only screen and (max-width: 1155px) and (min-width: 1024px) {
-    .button_overlap {
-      margin-top: 27px;
-    }
-  }
+    width: 10px;  
+}
 
-/* 1696 */
-  @media only screen and (max-width: 640px) and (min-width: 411px) {
-    .button_overlap {
-      margin-top: 5px;
-    }
-  }
+.sideLine{
+  background-color: #898d8f;
+    display: block;
+    height: 36px;
+   
+    text-align: center;
+    width: 2px;
+}
+
+ /* a:hover,
+ a:focus {
+	color: #882727;
+} */
+
+@media (min-width:769px) and (max-width:1024px){
+  .listBox{
+  width: 300px;
+ }
+}
 
 
-  /* 1701 */
-  @media only screen and (max-width: 342px) and (min-width: 0px) {
-    .button_overlap {
-      margin-top: 13px;
-    }
-  }
+@media (min-width:68px) and (max-width:768px){
+  .listBox{
+  width: 100%;
+ }
+}
+.actives>button .sideDot{
+  
+  background-color: #4481e4;
+}
+.actives>button>div{
+  color: #4481e4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

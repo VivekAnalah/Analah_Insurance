@@ -1,5 +1,7 @@
 
-import PolicyDetails from "../../Components/PolicyDetails/policyDetails";
+
+import Policy_Detail from "../../Components/PolicyDetails/policy_details";
+
 
 
 
@@ -108,34 +110,32 @@ function TwoWheeler() {
   return (
     <div>
       {" "}
-      <PolicyDetails
-        head={"Two-Wheeler Insurance"}
-        benefit_head = {"Benefits of buying Two-wheeler Insurance"}
-        key_feature_head = {"How to choose a Two-wheeler Insurance Policy?"}
-        subhead={"Compare Plans & Costs. Get Quotes Online."}
-        list1={"Compare Two-wheeler Insurance plans"}
-        list2={"Instant policy issuance"}
-        list3={"Free claims assistance"}
-        list4={"Get plan recommendation in seconds"}
-        img={"Two_ins"}
-        Ins_Text_1 ={"Rev up your protection and"}
-        Ins_Text_2 ={"get insured now!"}
-        Ins_Text_3 = {""}
-        description_1={
-          "In addition to offering third-party liability protection, Two-wheeler Insurance plans also offer comprehensive coverage to the owner/driver of the two-wheeler. These plans pay for the cost of repairs needed as a result of damage done to the insured two-wheeler as well as the owner's or driver's accidental death or disability."
-        }
-        benefits={benefits}
-        keyTerms={keyTerms}
-        twoWheel={true}
-        quotes = {"Get Free Quotes"}
-        quotes_link ={"https://bike.analahinsurance.com/bike/lead-page"}
-        why={false}
-        whyText ={[]}
-        no_benefit={true}
-        gridTopLeft = {"Features"}
-        gridTopRight = {"Coverage"}
-        gridHeader={"Key Features of Two-wheeler Insurance Policy"}
-          gridText={gridText}
+      <Policy_Detail
+         head={"Two-Wheeler Insurance"}
+         benefit_head = {"Benefits of buying Two-wheeler Insurance"}
+         key_feature_head = {"How to choose a Two-wheeler Insurance Policy?"}
+         subhead={"Compare Plans & Costs. Get Quotes Online."}
+         list1={"Compare Two-wheeler Insurance plans"}
+         list2={"Instant policy issuance"}
+         list3={"Free claims assistance"}
+         list4={"Get plan recommendation in seconds"}
+         img={"Bike_ins"}
+         Ins_Text_1 ={"Rev up your protection and"}
+         Ins_Text_2 ={"get insured now!"}
+         Ins_Text_3 = {""}
+         description_1={
+           "In addition to offering third-party liability protection, Two-wheeler Insurance plans also offer comprehensive coverage to the owner/driver of the two-wheeler. These plans pay for the cost of repairs needed as a result of damage done to the insured two-wheeler as well as the owner's or driver's accidental death or disability."
+         }
+         benefits={benefits}
+         keyTerms={keyTerms}
+         twoWheel={true}
+         quotes = {"Get Free Quotes"}
+         quotes_link ={"https://bike.analahinsurance.com/bike/lead-page"}
+         no_benefit={true}
+         gridTopLeft = {"Features"}
+         gridTopRight = {"Coverage"}
+         gridHeader={"Key Features of Two-wheeler Insurance Policy"}
+           gridText={gridText}
       />
     </div>
   );

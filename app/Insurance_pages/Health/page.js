@@ -1,5 +1,5 @@
-import PolicyDetails from "../../Components/PolicyDetails/policyDetails";
 
+import Policy_Detail from "../../Components/PolicyDetails/policy_details";
 function HealthInsurance() {
   const benefits = [
     {
@@ -86,7 +86,7 @@ function HealthInsurance() {
   ];
   return (
     <div>
-      <PolicyDetails
+      <Policy_Detail
         head={"Health Insurance"}
         benefit_head = {"Benefits of Health Insurance"}
         key_feature_head = {"Key Terms to consider while evaluating Health Insurance plans:"}
@@ -106,10 +106,7 @@ function HealthInsurance() {
         keyTerms={keyTerms}
         quotes={"Get Free Quotes"}
         quotes_link = {"https://health.analahinsurance.com/input/basic-details"}
-        why={false}
-        whyText ={[]}
-        add_ons_array = {[]}
-        document_data = {[]}
+        
       />
     </div>
   );

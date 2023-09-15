@@ -1,4 +1,5 @@
 
+
 import Footer from "../Components/footer";
 
 
@@ -7,25 +8,25 @@ function PolicyCancel() {
   
     return (
       <div>
-        <div className="my-0 bg-[#F5F5F5]">
+        <div className="bg-[linear-gradient(0deg, rgba(241, 246, 253, 0.00) 13.52%, rgba(241, 246, 253, 0.63) 30.11%, rgba(241, 246, 253, 0.63) 63.58%, rgba(255, 255, 255, 0.63) 100%)]">
         
-          <div className="bg-[#F5F5F5] pt-0  ml-[8.5%] mr-[8.5%] mx-auto pb-10 lg:pb-20">
-            <div className={"pt-[40px] sm:pt-[40px]"}>
-              <h2 className="font-semibold text-xl my-3 lg:my-0 lg:m-0 sm:pb-5 lg:pb-11 lg:text-3xl text-left">
-                <span className=" title-border-bottom ">Policy</span> Cancellation
+          <div className="bg-[linear-gradient(0deg, rgba(241, 246, 253, 0.00) 13.52%, rgba(241, 246, 253, 0.63) 30.11%, rgba(241, 246, 253, 0.63) 63.58%, rgba(255, 255, 255, 0.63) 100%)]  w-[75%] m-auto mx-auto pb-10 lg:pb-20">
+            <div className={"pt-[70px]"}>
+              <h2 className="textHeader2">
+                <span className="sm:title-border-bottom textHeader1">Policy</span> Cancellation
                 & Refund{" "}
               </h2>
-              <p className="text-[#595959] text-base lg:text-lg text-justify pb-5 lg:pb-10">
+              <p className="textNormal mt-[40px]">
                 {" "}
                 Policy cancellation and refund of the premium shall be as per the
                 terms and conditions of the policy.
               </p>
             </div>
             <div>
-              <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+              <h2 className="mt-[47px] CancelPolicy">
                 Cancellation Policy
               </h2>
-              <p className="text-[#595959] text-base lg:text-lg text-justify pb-5 lg:pb-10">
+              <p className="mt-[13px] CancelPolicyText text-justify">
                 If in case you decide to cancel an insurance product, the
                 insurance provider you purchased the product from will refund the
                 premium via cheque or direct credit, depending on their policy.
@@ -34,13 +35,13 @@ function PolicyCancel() {
                 We request you to contact the toll free number of your Insurance
                 Company or refer the respective section of your Policy’s terms and
                 conditions in order to cancel a policy. Additionally, you may get
-                in touch with us on <span class = "text-[#2A44A9] font-semibold" >+91-9920878181</span> or write to us at
-                 <span class = "text-[#2A44A9] font-semibold underline-offset-[1px]" style={{textDecoration : "underline"}} > contactus@analahinsurance.com,</span> and we will be happy to assist you.
+                in touch with us on <span class = "text-[#4C8CE7] font-semibold" ><a href="tel:+91 99208 78181">+91 99208 78181</a></span> or write to us at
+                 <span class = "text-[#4C8CE7]  underline-offset-[1px]" style={{textDecoration : "underline"}} > <a href="mailto:contactus@analahinsurance.com">contactus@analahinsurance.com</a>,</span> and we will be happy to assist you.
               </p>
-              <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+              <h2 className="CancelPolicy mt-[15px]">
                 Refund Policy
               </h2>
-              <p className="text-[#595959] text-base lg:text-lg text-justify pb-7 lg:pb-14">
+              <p className="CancelPolicyText mt-[13px]">
                 If a refund is required due to an erroneous transaction or
                 cancellation, the insurance provider you purchased the product
                 from will refund the premium through a cheque or direct credit, as

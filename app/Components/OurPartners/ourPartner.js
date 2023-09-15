@@ -5,14 +5,14 @@ function OurPartner() {
     const our_partner = new Array(25).fill(0)
 return (
       <div className="mt-[50px]">
-        <h2 className="font-semibold text-2xl lg:text-3xl text-center mb-5">
-          <span className="title-border-bottom">Our P</span>artners{" "}
-        </h2>
+        <div class="topic">
+        Our <sapn class="topic2">Partners</sapn>
+      </div>
         
         <div className="relative pt-10 lg:py-20">
          
   
-          <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2  lg:justify-center lg:items-center  w-[70%]  " style={{ margin: "auto"}}>
+          <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2  lg:justify-center lg:items-center  w-[60%]" style={{ margin: "auto"}}>
   {our_partner && our_partner.map((icons,i) => (
     
    

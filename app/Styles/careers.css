@@ -1,18 +1,76 @@
 /* 295 */
 .career-box {
-    width: 100%;
-    text-align: center;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
+  width: 100%;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
 /* 535 */
 .bred {
+  position: relative;
+  
+  height: 284.4px;
+  background-color: #FFF;
+  background: linear-gradient(
+    2deg,
+    rgb(237 244 251) 0%,
+    rgba(247, 242, 242, 0.06) 59.9%
+  );
+  
+}
+/* 538 */
+/* .bred h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.CareerHeader{
+  color: #4C8CE7;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.growTogether{
+  color: #131313;
+/* font-family: Work Sans; */
+font-size: 32px;
+font-weight: 400;
+line-height: 48px;
+}
+.growTogetherText{
+  color: #595959;
+text-align: justify;
+/* font-family: Work Sans; */
+
+font-weight: 400;
+line-height: 148.8%; /* 23.808px */
+}
+.CurrentOpenings{
+  color: #595959;
+/* font-family: Roboto; */
+
+font-weight: 600;
+line-height: normal;
+}
+
+.SalesText{
+  color: #FFF;
+text-align: center;
+
+font-weight: 600;
+line-height: normal;
+}
+
+@media (min-width:0px) and (max-width: 640px){
+
+  .HiringContainer{
     position: relative;
+    left: 0%;
+    width: 50%;
+    margin: auto;
+
   }
-  /* 538 */
-  .bred h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+
+}

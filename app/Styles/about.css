@@ -1,0 +1,173 @@
+.aboutContainer {
+  padding-top: 70px;
+  background: linear-gradient(
+    0deg,
+    rgba(241, 246, 253, 0) 13.52%,
+    rgba(241, 246, 253, 0.63) 30.11%,
+    rgba(241, 246, 253, 0.63) 63.58%,
+    rgba(255, 255, 255, 0.63) 100%
+  );
+}
+
+.gridStyle {
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+}
+
+.textStyleAbout {
+  width: 80%;
+  margin: auto;
+  color: #595959;
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.textHeadings {
+  color: #000;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.topicAbout {
+  margin: auto;
+  text-align: center;
+  color: #4481e4;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.topic2About {
+  color: #000;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contentTextStyle {
+  color: #8f8f8f;
+
+  /* text-align: justify; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.aboutIcons {
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 1600px) and (max-width: 3000px) {
+ 
+  .aboutIcons {
+    width: 60px;
+    height: 60px;
+  }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .textStyleAbout {
+    font-size: 14px;
+  }
+  .textHeadings {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .contentTextStyle {
+    font-size: 12px;
+
+    font-weight: 400;
+  }
+
+  .aboutIcons {
+    width: 30px;
+    height: 30px;
+  }
+  .topicAbout {
+    font-size: 28px;
+  }
+  .topic2About {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 769px) {
+  .topicAbout {
+    font-size: 28px;
+  }
+  .topic2About {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 441px) and (max-width: 600px) {
+  .textHeadings {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .contentTextStyle {
+    font-size: 12px;
+
+    font-weight: 400;
+  }
+
+  .aboutIcons {
+    width: 30px;
+    height: 30px;
+  }
+  .textStyleAbout {
+    font-size: 14px;
+  }
+
+  .topicAbout {
+    font-size: 28px;
+  }
+  .topic2About {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 440px) {
+  .textHeadings {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .contentTextStyle {
+    font-size: 10px;
+
+    font-weight: 400;
+  }
+
+  .aboutIcons {
+    width: 20px;
+    height: 20px;
+  }
+  .textStyleAbout {
+    font-size: 12px;
+  }
+
+  .topicAbout {
+    font-size: 26px;
+  }
+  .topic2About {
+    font-size: 26px;
+  }
+}

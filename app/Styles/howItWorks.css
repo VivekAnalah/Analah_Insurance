@@ -1,13 +1,90 @@
 .how-it-works-img {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+.HowItText {
+  font-size: 32px;
+}
+
+.how-it-works-img h3 {
+  font-size: 16px;
+}
+
+.how-it-works-img img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+.howItworksChild {
+  width: 78%;
+  height: auto;
+  padding-top: 39px;
+  padding-bottom: 20px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #ebebeb;
+  background: #fdfdfd;
+}
+
+.howItworksText {
+  color: #595959;
+  text-align: center;
+
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 40px;
+}
+
+.howItworksNumbering {
+  color: #e0e0e0;
+  text-align: center;
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .HowItText {
+    font-size: 28px;
+  }
+  .howItworksText {
+    font-size: 14px;
+  }
+  .howItworksNumbering {
+    font-size: 36px;
   }
 
-  .how-it-works-img h3 {
-    font-size: 16px;
+  .howItworksChild {
+    width: 78%;
+   height: auto;
+
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .HowItText {
+    font-size: 26px;
+  }
+  .howItworksText {
+    font-size: 14px;
   }
 
-  .how-it-works-img img {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
+  .howItworksNumbering {
+    font-size: 32px;
   }
+}
+
+@media (min-width: 0px) and (max-width: 639px) {
+  .HowItText {
+    font-size: 24px;
+  }
+  .howItworksText {
+    font-size: 14px;
+  }
+  .howItworksNumbering{
+    font-size: 28px;
+  }
+}

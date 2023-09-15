@@ -1,4 +1,4 @@
-import PolicyDetails from "../../Components/PolicyDetails/policyDetails";
+import Policy_Detail from "../../Components/PolicyDetails/policy_details";
 
 function TermLife() {
   const benefits = [
@@ -78,7 +78,7 @@ function TermLife() {
   ];
   return (
     <div>
-      <PolicyDetails
+      <Policy_Detail
         head={"Term Life Insurance"}
         benefit_head = {"Benefits of Term Life Insurance"}
         key_feature_head = {"Key Terms to consider while evaluating Term Life Insurance plans:"}
@@ -98,10 +98,7 @@ function TermLife() {
         keyTerms={keyTerms}
         quotes = {"Get Free Quotes"}
         quotes_link = {"https://term.analahinsurance.com/"}
-        why={false}
-        whyText ={[]}  
-        add_ons_array = {[]}
-        document_data = {[]}
+        
         />
     </div>
   );

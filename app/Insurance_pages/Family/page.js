@@ -1,5 +1,5 @@
-import PolicyDetails from "../../Components/PolicyDetails/policyDetails";
 
+import Policy_Detail from "../../Components/PolicyDetails/policy_details";
 
 function FamilyHealth() {
     const benefits = [
@@ -70,7 +70,7 @@ function FamilyHealth() {
     return (
       <div>
         {" "}
-        <PolicyDetails
+        <Policy_Detail
           head={"Family Health Insurance"}
           benefit_head = {"Benefits of Family Health Insurance"}
           key_feature_head = {"Key Terms to consider while evaluating Family Health Insurance plans:"}
@@ -89,10 +89,7 @@ function FamilyHealth() {
           benefits={benefits}
           keyTerms={keyTerms}
           quotes = {"Get Free Quotes"}
-          why={false}
-          whyText ={[]}
-          add_ons_array = {[]}
-        document_data = {[]}
+         
         />
       </div>
     );

@@ -1,29 +1,73 @@
-
+import "../../Styles/about.css";
 
 function About() {
 
+  const aboutUs_detials = [
+
+    {
+        icons : "target1.png",
+        heading: "Objective",
+        text : "Provide a broad range of insurance products from trusted insurers, ensuring the best possible coverage."
+    },
+    {
+        icons : "compare11.png",
+        heading: "Compare policies",
+        text : "Ability to compare various policies' features and prices for the best value."
+    },
+    {
+        icons : "fastTime1.png",
+        heading: "Quick Process",
+        text : "Complete policy-related tasks quickly and efficiently with a few clicks."
+    },
+    {
+        icons : "discount1.png",
+        heading: "Competitive Pricing",
+        text : "Offer the most competitive rates for high-level protection."
+    },
+    {
+        icons : "bestCustomerExperience1.png",
+        heading: "Experienced Professionals",
+        text : "Dedicated team to help maximize policy benefits and protect against potential risks."
+    },
+    {
+        icons : "paymentSystem1.png",
+        heading: "Online Renewal and Claims",
+        text : "Hassle-free service for policy renewal and claims, even for policies not bought with us."
+    }
+] 
+
+
     return (
-      <div className="bg-[#FAFFFF] mt-[0px] scroll-mt-[100px]" id="about"  >
-        
-     
-      <div className="flex space-y-5 flex-col justify-center pt-5">
-    <h2 className="font-semibold text-2xl lg:text-3xl text-center m-auto lg:pb-[30px] pb-[0px]">
-      <span className="title-border-bottom">Abou</span>t Us
-    </h2>
-    <h5 className="text_font text-justify my-1 pt-[30px]">
-    Analah Insurance is an IRDAI regulated Insurance Broking Firm, with headquarters in Mumbai's prestigious BKC area. Our primary objective is to provide you with a broad range of insurance products from the most trusted insurers, ensuring that you receive the best possible coverage for your specific requirements. We work tirelessly to ensure that our clients get the highest level of protection at the most competitive rates.
-    </h5>
-    <h5 className="text_font text-justify  my-1">
-    In addition, we understand that choosing the right insurance policy can be challenging, which is why we offer you the ability to compare various policies' features and prices. By comparing policies, you can determine the best plan for your needs while ensuring that you get the best value for your money. You can complete the entire process quickly and efficiently with just a few clicks.
-    </h5>
-    <h5 className="text_font text-justify  my-1">
-    Analah Insurance also provides a hassle-free online renewal and claims service for all your policies. You can renew your policy or file a claim in only a few minutes, even if you did not buy your policy with us. Our team of experienced professionals is dedicated to helping you make the most of your policies while ensuring that you are fully protected against any potential risks.
-    </h5>
-    <h5 className="text_font text-justify  my-1">
-    At Analah Insurance, we take pride in our commitment to our clients' satisfaction and strive to provide them with the best possible insurance solutions. We are confident that our broad range of products, competitive pricing, and excellent service will exceed your expectations.
-    </h5> 
-  </div>
+      <div className='w-[100%] aboutContainer mt-[0px] scroll-mt-[50px]' id="about" >
+      <div className='m-[auto]'>
+      <div class="topicAbout ">About <sapn class="topic2About">Us</sapn></div>
+      <p className='textStyleAbout'>Analah Insurance is an IRDAI regulated Insurance Broking Firm, with headquarters in Mumbai's prestigious BKC area.</p>
       </div>
+
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-4 m-[auto] w-[64%] mt-[50px]">
+
+          {
+              aboutUs_detials && aboutUs_detials.map((ele,i) =>
+              (
+                  <div className='p-[6%] grid grid-cols-[20%,80%]  gridStyle' key={i}>
+
+                  <div className=''>
+                      <img src={`/Images/${ele.icons}`} className='aboutIcons' alt="Icons"/>
+                  </div>
+                  <div>
+                      <h5 className='textHeadings'>{ele.heading}</h5>
+                      <p className='contentTextStyle mt-[15px]'>{ele.text}</p>
+                  </div>
+                </div>  
+              ))
+          }
+</div>
+
+
+
+
+
+  </div>
     );
   }
   

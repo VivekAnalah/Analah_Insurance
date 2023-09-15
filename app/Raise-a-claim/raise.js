@@ -4,21 +4,21 @@ import RaiseButton from "./raiseButton"
 export default function Raise() {
   
   return (
-    <div className="">
-        <div className="flex flex-col sm:flex-row gap-[6%]  mt-[50px] relative items-center">
-          <div className=" sm:w-[36.6%] w-[70%] order-2 sm:order-1 flex flex-col  ml-[8.5%]  xl:pl-0 sm:ml-[9.5%] sm:mt-[0px] mt-[15px]">
-            <div className="mt-[20px] md:space-y-8 lg:space-y-10 sm:space-y-5 space-y-5">
-              <h2 className="font-semibold sm:text-[22px] text-[24px] 2xl:text-[32px] lg:text-[28px] md:text-[26px] text-[#2A44A9]">
+    <div className="relative backgroundStyle">
+        <div className="flex flex-col sm:flex-row gap-[10%]  sm:pt-[50px] relative sm:w-[70%] w-[90%] m-[auto]">
+          <div className=" m-auto sm:w-[60%] w-[80%] order-1 sm:order-1 flex flex-col  sm:ml-[8.5%]  xl:pl-0 sm:ml-[9.5%] sm:mt-[0px] mt-[15px] ">
+            <div className="mt-[30px]">
+              <h2 className="textHeader1">
                 <span className="title-border-bottom ">Rais</span>e a Claim
               </h2>
-              <h3 className="leading-[30px] font-[600] text-[#000000] text-[16px] 2xl:text-[20px] lg:text-[18px] md:text-[16px]  sm:text-[14]">
+              <h3 className="font-[500] text-[#000000]  mt-[27px] textStyleRaise">
                 Raise your claim request in only a few clicks.
               </h3>
-              <h4 className="font-[400] text-base text-[16px] 2xl:text-[20px] lg:text-[18px] md:text-[16px]  sm:text-[14] text-[#595959]">
+              <h4 className="font-[400] text-[#595959] mt-[15px] textStyleRaise">
                 You may raise a claim request, even if you did not buy your
                 policy with us.
               </h4>
-              <div className="text-center my-6 sm:text-left sm:my-0 ">
+              <div className="text-center sm:text-left  mt-[45px] sm:relative absolute bottom-[15%] sm:right-[0%] right-[25%] raiseButtonContainer">
                 <a href="#raiseform">
 
                   <RaiseButton />
@@ -27,25 +27,36 @@ export default function Raise() {
               </div>
             </div>
           </div>
-          <div className="sm:w-1/2 order-1 sm:order-2 flex flex-col w-[70%]  sm:w-[50%]">
+          <div className="sm:w-1/2 order-1 sm:order-2 flex flex-col w-[70%]  sm:w-[30%] m-auto sm:mt-[0px] mt-[15px] sm:ml-[0px] ml-[60px]">
             <div className="">
               <div
-                className="rounded-tr-[349px] ml-auto w-auto h-full py-16 max-w-[100%] sm:max-w-[100%] xl:max-w-[85%] "
-                style={{
-                  background:
-                    "linear-gradient(172.81deg, #2A44A9 -68.4%, rgba(255, 255, 255, 0.06) 87.56%)",
-                  borderRadius: "500.5px 0px 0px 0px",
-                }}
+                className="ClaimImage"
+               
               >
                 <img
                   alt="insurance"
-                  src={"/RaiseClaim.png"}
-                  className="pt-16  md:h-[50vh]  h-[250px]  mx-auto"
+                  src={"/Images/Raise_claim.png"}
+                  className="mt-[30px]"
                 />
                 
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="absolute bottom-[0%]  ">
+          <img
+            src={"/Images/background_left.png"}
+            alt="left"
+            className="lg:w-[100%] md:w-[70%] sm:w-[50%] w-[50%] leftImage"
+          />
+        </div>
+        <div className="absolute bottom-[0%] right-[0px] flex justify-end">
+          <img
+            src={"/Images/background_right.png"}
+            alt="right"
+            className="lg:w-[90%] md:w-[70%] sm:w-[50%] w-[40%] RightImage"
+          />
         </div>
       </div>
   )

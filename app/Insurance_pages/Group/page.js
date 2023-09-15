@@ -1,5 +1,5 @@
-import PolicyDetails from "../../Components/PolicyDetails/policyDetails";
 
+import Policy_Detail from "../../Components/PolicyDetails/policy_details";
 
 function GroupInsurance() {
     const benefits = [
@@ -74,7 +74,7 @@ function GroupInsurance() {
     ];
     return (
       <div>
-        <PolicyDetails
+        <Policy_Detail
           head={"Group Health Insurance"}
           benefit_head = {"Benefits of Group Health Insurance to the Employer"}
           key_feature_head = {"Key Features of Group Health Insurance"}
@@ -93,10 +93,7 @@ function GroupInsurance() {
           benefits={benefits}
           keyTerms={keyTerms}
           quotes = {"Get Free Quotes"}
-          why={false}
-          whyText ={[]}
-          add_ons_array = {[]}
-        document_data = {[]}
+          
         button_overlap = {true}
         />
       </div>

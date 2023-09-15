@@ -57,10 +57,10 @@ export default function Dynamic_Buttons() {
   return (
     <>
      {/* ------- Value Image & Button Container -------------- */}
-     <div className="flex justify-center items-center relative w-[120%] sm:w-[100%]"  >
+     <div className="flex justify-center items-center relative w-[100%] sm:w-[80%]"  >
             <img
               alt="values"
-              src={"/values.png"}
+              src={"/Images/values.png"}
               className="h-auto  lg:w-[70%]"
               
             />
@@ -104,12 +104,12 @@ export default function Dynamic_Buttons() {
           </div>
   {/* ----------*******************------------------------  */}
          
-          <h3 className="font-semibold text-xl lg:text-2xl text-center">
-            <span className="title-border-bottom text-[#121519]">
+          <h3 className="text-center titleStyle">
+            
               {title}
-            </span>
+            
           </h3>
-          <h5 className="text_font text-center lg:w-7/12 pt-6">
+          <h5 className="textStyleValue w-[60%]">
             {value}
           </h5>
     </>

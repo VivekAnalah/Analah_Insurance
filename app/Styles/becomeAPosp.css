@@ -1,10 +1,17 @@
-
-
 .mycontainer {
   padding: 0 50px !important;
 }
 .posp-content ul {
   margin-bottom: 10px;
+}
+
+.backgroundStylePosp {
+  background: linear-gradient(
+    2deg,
+    rgb(237 244 251) 0%,
+    rgba(247, 242, 242, 0.06) 59.9%
+  );
+  
 }
 
 .posp-content li {
@@ -16,13 +23,27 @@
 
 .posp-content li {
   margin-bottom: 25px;
-  font-size: 16px;
 }
 .posp-content2 li {
-    margin-bottom: 0px;
-  }
+  margin-bottom: 0px;
+}
 
+.sideDot{
+  background-color: #a3a7a9;
+  border-radius: 50%;
+    height: 10px;
+  
+    width: 10px;  
+}
 
+.sideLine{
+  background-color: #898d8f;
+    display: block;
+    height: 36px;
+   
+    text-align: center;
+    width: 2px;
+}
 
 @media (min-width: 1500px) and (max-width: 1600px) {
   .mycontainer {
@@ -31,11 +52,10 @@
 }
 @media screen and (max-width: 768px) {
   .posp-content li {
-    font-size: 14px;
+    
     margin-bottom: 10px;
     padding-left: 0;
   }
- 
 }
 @media only screen and (max-width: 500px) and (min-width: 50px) {
   .mycontainer {
@@ -45,18 +65,223 @@
 }
 
 /* Margin bottom Issue  */
-.gap_issue{
+.gap_issue {
   margin-top: 0px;
-  }
+}
 
 @media only screen and (min-width: 1024px) {
-  .gap_issue{
+  .gap_issue {
     margin-top: 0px;
-    }
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 0px) {
-  .gap_issue{
+  .gap_issue {
     margin-top: 10px;
-    }
+  }
 }
+
+.PospHeader {
+  color: #2f2f2f;
+  /* font-family: Work Sans; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pospSubhead {
+  color: #4c8ce7;
+  /* font-family: Work Sans; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.pospSubText {
+  color: #595959;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pospSubBoldText {
+  color: #4f4f4f;
+  /* font-family: Work Sans; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.pospsubheadingtext {
+  color: #595959;
+  /* font-family: Work Sans; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.eligibleHead {
+  color: #4c8ce7;
+  text-align: justify;
+  /* font-family: Work Sans; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.eligibleText {
+  color: #595959;
+  text-align: justify;
+  /* font-family: Work Sans; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activesB > button .sideDot {
+  background-color: #4481e4;
+}
+.activesB > button > div {
+  color: #4481e4;
+}
+.pospSubText:hover {
+  cursor: pointer;
+}
+
+.pospSubText:hover .dots-text {
+  display: none;
+}
+.pospSubText:hover .hiddenText {
+  display: inline;
+}
+
+
+
+@media (min-width: 769px ) and (max-width:1024px){
+  .PospHeader{
+    font-size: 28px;
+  }
+  .pospSubText, .pospSubBoldText{
+    font-size: 14px;
+  }
+  .pospSubhead{
+    font-size: 12px;
+  }
+
+  .pospsubheadingtext {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 601px ) and (max-width:768px){
+  .PospHeader{
+    font-size: 26px;
+  }
+  .pospSubText, .pospSubBoldText{
+    font-size: 14px;
+  }
+  .pospSubhead{
+    font-size: 12px;
+  }
+  .pospsubheadingtext {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 441px ) and (max-width:600px){
+  .PospHeader{
+    font-size: 26px;
+  }
+  .pospSubText,.pospSubBoldText{
+    font-size: 12px;
+  }
+  .pospSubhead{
+    font-size: 10px;
+  }
+  .pospsubheadingtext {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: 0px ) and (max-width:440px){
+  .PospHeader{
+    font-size: 24px;
+  }
+  .pospSubText, .pospSubBoldText{
+    font-size: 12px;
+  }
+  .pospSubhead{
+    font-size: 10px;
+  }
+  .pospsubheadingtext {
+    font-size: 14px;
+  }
+ }
+ @media (min-width: 0px ) and (max-width:400px){
+  .PospHeader{
+    font-size: 22px;
+  }
+  
+ }
+
+
+ @media (min-width:750px) and (max-width:890px){
+  .PospImageContainer{
+width: 40%;
+  }
+  .BecomePospImage{
+    width: 252px;
+    height: 168px;
+}
+.RightPospImage{
+width: 40%;
+}
+.leftPospImage{
+  width: 60%;
+}
+ }
+
+ @media (min-width:0px) and (max-width:750px){
+  .PospImageContainer{
+    display: none;
+
+  }
+  .pospSubTextContainer{
+    width: 90%;
+  }
+  .PospContentContainer{
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 10%;
+  }
+  .BecomePospImage{
+    width: 252px;
+    height: 168px;
+}
+
+.RightPospImage{
+  width: 40%;
+  }
+  .leftPospImage{
+    width: 50%;
+  }
+ }
+
+ @media (min-width:0px) and (max-width:400px){
+  .RightPospImage{
+    width: 20%;
+    }
+    .leftPospImage{
+      width: 30%;
+    }
+ }

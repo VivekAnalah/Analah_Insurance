@@ -4,17 +4,20 @@
   border-bottom: 3px solid #2a44a9;
 } */
 
-/* .mycontainer {
+.mycontainer {
   padding: 0 50px !important;
-} */
+} 
 #example-navbar-danger {
   background-color: white;
   z-index: 100;
 }
 .active {
-  color: #2a44a9;
+  color: #4C8CE7;
   font-weight: 700;
-  border-bottom: 3px solid #2a44a9;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #fff, #4582e4, #fff);
+  border-image-slice: 1;
+  padding-bottom: 5px;
 }
 .nav-item {
   margin-left: 30px;
@@ -23,7 +26,7 @@
   margin-top: 7px;
 }
 #example-navbar-danger.flex button {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 
@@ -45,3 +48,15 @@
     padding: 0 10px !important;
   }
 } */
+
+.register_text{
+ border-radius: 12.482px;
+ background-color: #4C8CE7;
+ transition: 0.5s;
+}
+
+.register_text:hover{
+  background-color: #fff;
+  color: #4C8CE7;
+
+}

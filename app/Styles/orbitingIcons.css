@@ -1,0 +1,394 @@
+.containerOrbit {
+  position: relative;
+  top: 25px;
+}
+
+.orbit .center-image {
+  width: 5rem;
+  position: relative;
+  z-index: 10;
+}
+.orbit .center-image img {
+  position: absolute;
+  top: 95px;
+  left: 94%;
+}
+.orbit ul {
+  border: 1px dashed #2a44a9;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  list-style: none;
+  transform-origin: center;
+  animation: orbit 50s linear infinite;
+}
+
+.orbit li {
+  position: absolute;
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-weight: 500;
+
+  text-align: center;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
+
+.orbit li > * {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+  animation: orbit 50s linear reverse infinite;
+}
+.orbit li > div {
+  background-color: #fff;
+  border-radius: 50%;
+
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.orbit li > div img {
+  width: 30px;
+  height: 30px;
+}
+.orbit li:nth-child(1) {
+  transform: translate(7.5rem, 0rem);
+}
+.orbit li:nth-child(2) {
+  transform: translate(0rem, 7.5rem);
+}
+.orbit li:nth-child(3) {
+  transform: translate(0rem, -7.5rem);
+}
+.orbit li:nth-child(4) {
+  transform: translate(-7.5rem, 0rem);
+}
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
+  }
+}
+@keyframes hold-position {
+  100% {
+    rotate: -1turn;
+  }
+}
+@keyframes throb {
+  100% {
+    scale: 1.05;
+  }
+}
+.orbit2 {
+  position: absolute;
+  top: -34%;
+  left: -34%;
+}
+.orbit2 ul {
+  border: 1px dashed #2a44a9;
+
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  list-style: none;
+
+  transform-origin: center;
+  animation: orbit2 50s linear infinite;
+}
+/* .orbit2 ul:hover {
+  animation-play-state: paused;
+   --orbit2-play-state: paused; 
+} */
+.orbit2 li {
+  position: absolute;
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-weight: 500;
+
+  text-align: center;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
+
+.orbit2 li > * {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+  animation: orbit2 50s linear reverse infinite;
+}
+
+.orbit2 li > div {
+  background-color: #fff;
+  border-radius: 50%;
+
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.orbit2 li:nth-child(1) {
+  transform: translate(12.5rem, 0rem);
+}
+.orbit2 li:nth-child(2) {
+  transform: translate(0rem, 12.5rem);
+}
+.orbit2 li:nth-child(3) {
+  transform: translate(0rem, -12.5rem);
+}
+.orbit2 li:nth-child(4) {
+  transform: translate(-12.5rem, 0rem);
+}
+@keyframes orbit2 {
+  100% {
+    rotate: -1turn;
+  }
+}
+#bike {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+#heart {
+  position: absolute;
+  top: 23%;
+  left: 35%;
+}
+#investment {
+  position: absolute;
+  top: 23%;
+  left: 49%;
+}
+#guaranteed {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+}
+.iconsSize {
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+@media (min-width: 1600px) and (max-width: 2560px) {
+  .orbit .center-image {
+    width: 8rem;
+  }
+  .orbit .center-image img {
+    width: 20rem;
+    position: absolute;
+    top: 162px;
+    left: 110%;
+  }
+  .orbit ul {
+    width: 25rem;
+    height: 25rem;
+  }
+  .orbit li:nth-child(1) {
+    transform: translate(12.5rem, 0rem);
+  }
+  .orbit li:nth-child(2) {
+    transform: translate(0rem, 12.5rem);
+  }
+  .orbit li:nth-child(3) {
+    transform: translate(0rem, -12.5rem);
+  }
+  .orbit li:nth-child(4) {
+    transform: translate(-12.5rem, 0rem);
+  }
+
+  .orbit2 ul {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .orbit2 li:nth-child(1) {
+    transform: translate(17.5rem, 0rem);
+  }
+  .orbit2 li:nth-child(2) {
+    transform: translate(0rem, 17.5rem);
+  }
+  .orbit2 li:nth-child(3) {
+    transform: translate(0rem, -17.5rem);
+  }
+  .orbit2 li:nth-child(4) {
+    transform: translate(-17.5rem, 0rem);
+  }
+
+  .orbit2 {
+    position: absolute;
+    top: -20%;
+    left: -20%;
+  }
+  #bike {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 40%;
+    left: 20%;
+  }
+  #heart {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 27%;
+    left: 35%;
+  }
+  #investment {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 27%;
+    left: 57%;
+  }
+  #guaranteed {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 40%;
+    left: 71%;
+  }
+}
+
+@media (min-width: 949px) and (max-width: 1024px) {
+
+  .containerOrbit {
+    position: relative;
+    top: 25px;
+  }
+
+  .orbit .center-image {
+    width: 2.5rem;
+  }
+  .orbit .center-image img {
+    position: absolute;
+    top: 65px;
+    left: 155%;
+  }
+
+  .orbit ul {
+    width: 10rem;
+    height: 10rem;
+  }
+  .orbit li:nth-child(1) {
+    transform: translate(5rem, 0rem);
+  }
+  .orbit li:nth-child(2) {
+    transform: translate(0rem, 5rem);
+  }
+  .orbit li:nth-child(3) {
+    transform: translate(0rem, -5rem);
+  }
+  .orbit li:nth-child(4) {
+    transform: translate(-5rem, 0rem);
+  }
+
+  .orbit2 ul {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .orbit2 li:nth-child(1) {
+    transform: translate(7.5rem, 0rem);
+  }
+  .orbit2 li:nth-child(2) {
+    transform: translate(0rem, 7.5rem);
+  }
+  .orbit2 li:nth-child(3) {
+    transform: translate(0rem, -7.5rem);
+  }
+  .orbit2 li:nth-child(4) {
+    transform: translate(-7.5rem, 0rem);
+  }
+
+ 
+
+  .orbit li > div img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .orbit2 li > div img {
+    width: 25px;
+    height: 25px;
+  }
+
+  #bike {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 35%;
+    left: 25%;
+  }
+  #heart {
+    padding-top: 2%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 35%;
+  }
+  #investment {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 52%;
+  }
+  #guaranteed {
+    padding-top: 2%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 35%;
+    left: 65%;
+  }
+
+  .containerOrbit {
+    top: 75px;
+    left: 25%;
+  }
+
+  .orbit2 li {
+    width: 2rem;
+  }
+
+  .orbit li {
+    width: 2rem;
+  }
+
+  .orbit2 {
+    position: absolute;
+    top: -27%;
+    left: -25%;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1024px) {
+  .containerOrbit {
+    top: 75px;
+    left: -50%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 950px) {
+  .containerOrbit {
+    display: none;
+  }
+}

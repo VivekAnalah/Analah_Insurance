@@ -1,5 +1,5 @@
-import PolicyDetails from "../../Components/PolicyDetails/policyDetails";
 
+import Policy_Detail from "../../Components/PolicyDetails/policy_details";
 
 function HomeInsurance() {
     const benefits = [
@@ -34,7 +34,7 @@ function HomeInsurance() {
   
     return (
       <div>
-        <PolicyDetails
+        <Policy_Detail
           head={"Home Insurance"}
           
           subhead={

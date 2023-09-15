@@ -1,0 +1,76 @@
+/* 429 */
+.checkboxInvest {
+  gap: 15px;
+  display: flex;
+  /* align-items: baseline; */
+  margin-bottom: 28px;
+  padding-left: 25px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+/* 600 */
+.roundInvest {
+  position: relative;
+  display: flex;
+}
+
+.roundInvest label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 17px;
+  /* left: 0px; */
+  /* position: absolute; */
+  /* top: -8px; */
+  width: 17px;
+}
+
+.roundInvest label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  opacity: 0;
+  position: absolute;
+  top: 5px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.roundInvest input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.roundInvest input[type="checkbox"]:checked + label {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+}
+
+.roundInvest input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+@media (min-width: 1640px) and (max-width: 3000px) {
+ 
+  .checkboxInvest {
+      gap: 11px;
+      display: flex;
+      margin-bottom: 28px;
+      padding-left: 35px;
+    
+    }
+    
+  }
+
+  @media (max-width: 640px) and (min-width: 0px) {
+    .checkboxInvest {
+      
+      margin-bottom: 5px;
+     
+    }
+  
+   
+  }

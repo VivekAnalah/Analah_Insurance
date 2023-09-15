@@ -1,5 +1,4 @@
-import PolicyDetails from "../../Components/PolicyDetails/policyDetails";
-
+import Policy_Detail from "../../Components/PolicyDetails/policy_details";
 
 function RetirementInsurance() {
     const benefits = [
@@ -60,7 +59,7 @@ function RetirementInsurance() {
   
     return (
       <div>
-        <PolicyDetails
+        <Policy_Detail
           head={"Retirement Plans"}
           benefit_head = {"Benefits of Retirement Plans:"}
          
@@ -69,7 +68,7 @@ function RetirementInsurance() {
           list2={"Tax Free Regular Income"}
           list3={"Compound Interest"}
           list4={"Flexibility to meet Individual Needs and Investment Goals"}
-          img={"Retire_ins"}
+          img={"Retirement_ins"}
           Ins_Text_1={" Get retirement ready with our plans and"}
           Ins_Text_2={"start living the dream!"}
           Ins_Text_3={""}

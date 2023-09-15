@@ -1,265 +1,200 @@
 /* 204 */
 .hero {
   width: 40%;
-  position: absolute;
-  height: auto;
 
-  top: 1%;
-  
+  height: auto;
 }
 /* 211 */
 .hero-background {
- 
-  background-image: url("/bg1.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
   border-radius: 0px 0px 0px 0px;
   max-width: 200%;
   width: 100%;
-
-  position: relative;
-  right: 0;
-  top: 0;
 }
 /* 234 */
 .cstm-grid {
-    display: grid;
-    font-size: 85%;
- 
-  }
-  /* 239 */
-  .homeLeft {
-    width: 54%;
-   }
-  /* 247 */
-  .main-hero {
-    height: 50%;
-  }
+  display: grid;
+  font-size: 85%;
+}
+/* 239 */
+.homeLeft {
+  width: 54%;
+}
+/* 247 */
+.main-hero {
+  background-image: url("/Images/bg1.png");
+  width: 100%;
+  background-size: 100% 320px;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 0px 0px;
+  max-width: 200%;
+}
 /* 1051 */
-  @media only screen and (min-width: 1671px) and (max-width: 3000px) {
-   
-    .cstm-grid {
-      display: grid;
-      font-size: 100%;
-      column-gap: 4%;
-      row-gap: 15%;
-      grid-template-columns: repeat(4, 1fr) !important;
-    }
-    .hero {
-      width: 33%;
-      position: absolute;
-      height: auto;
-      top: 2%;
-    }
-    /* hero background */
-    .hero-background{
-   height: 634px;
-    }
-    .homeLeft {
-      width: 60%;
-      }
-    
-  }
-  /* 1100 */
-  @media only screen and (max-width: 1670px) and (min-width: 1536px) {
-   
-    .cstm-grid {
-      grid-template-columns: repeat(4, 1fr) !important;
-      font-size: 85%;
-    }
-    
-  }
-  /* 1115 */
-  @media only screen and (max-width: 1535px) and (min-width: 1425px) {
+@media only screen and (min-width: 1671px) and (max-width: 3000px) {
   .cstm-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      font-size: 85%;
-    }
+    display: grid;
+    font-size: 100%;
+    column-gap: 4%;
+    row-gap: 15%;
+    grid-template-columns: repeat(4, 16%) !important;
   }
-/* 1125 */
-  @media only screen and (max-width: 1535px) and (min-width: 1365px) {
-   
-    .cstm-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      font-size: 85%;
-    }
-    .main-hero {
-      height: 650px;
-    }
-    
+  .hero {
+    width: 33%;
+
+    height: auto;
   }
-  /* 1145 */
-  @media (min-width: 1500px) and (max-width: 1600px) {
-    .main-hero {
-      padding: 0 115px !important;
-    }
+  /* hero background */
+  .hero-background {
+    height: 634px;
   }
-  /* 1176 */
-  @media only screen and (max-width: 1365px) and (min-width: 1280px) {
-   .cstm-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      font-size: 85%;
-    }
-    
-    .main-hero {
-      height: 650px;
-    }
-    
-  }
-  /* 1196 */
-  @media only screen and (max-width: 1280px) and (min-width: 1160px) {
-    
-    .cstm-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      font-size: 85%;
-    }
-   
-    .main-hero {
-      height: 583px;
-    }
-    
-  }
-  /* 1216 */
-  @media only screen and (max-width: 1160px) and (min-width: 1024px) {
-   
-    .cstm-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      font-size: 85%;
-    }
-    .choose-us {
-      margin-top: 200px;
-    }
-   
-    .main-hero {
-      height: 583px;
-    }
-    
-  }
-/* 1239 */
-  @media only screen and (max-width: 1024px) and (min-width: 951px) {
-   
-    .cstm-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      font-size: 85%;
-    }
-    .choose-us {
-      margin-top: 200px;
-    }
-   
-    .main-hero {
-      height: 583px;
-    }
-    .homeLeft {
-      width: 54%;
-    }
-    .homeLeft h1 {
-      line-height: 45px;
-    }
-    .hero {
-      margin-top: 127px;
-    }
-  }
-  /* 1299 */
-  @media only screen and (max-width: 950px) and (min-width: 700px) {
-    .homeLeft {
-      margin-top: 54%;
-      width: 100%;
-    }
-    .homeLeft h1 {
-      line-height: 45px;
-    }
-    .cstm-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 17%);
-      font-size: 85%;
-    }
-   .hero {
-      right: 20%;
-      width: 60%;
-      top:1.5%;
-    }
-  }
-  /* 1353 */
-  @media only screen and (max-width: 700px) and (min-width: 500px) {
-    .cstm-grid {
-      display: grid;
-      column-gap: 5%;
-      grid-template-columns: repeat(3, 28%);
-      font-size: 85%;
-    }
-    .homeLeft {
-      width: 100%;
-    }
-    .homeLeft h1 {
-      line-height: 45px;
-    }
-    .hero {
-      right: 10%;
-      width: 80%;
-      top: 120px;
-    }
-  }
-  /* 1433 */
-  @media only screen and (max-width: 500px) and (min-width: 50px) {
-    .cstm-grid {
-      display: grid;
-      column-gap: 15%;
-      grid-template-columns: repeat(2, 35%);
-      font-size: 85%;
-    }
-    .homeLeft {
-      padding-top: 0px;
-      margin-top: 80%;
-      width: 100%;
-    }
-    .homeLeft h1 {
-      line-height: 45px;
-    }
-    
-    .hero {
-      right: 10%;
-      width: 80%;
-      top: 120px;
-    }
-    
-  }
-  /* 1483 */
-  @media only screen and (max-width: 400px) and (min-width: 50px) {
-    .cstm-grid {
-      display: grid;
-      column-gap: 15%;
-      grid-template-columns: repeat(2, 35%);
-      font-size: 85%;
-    }
-    .homeLeft {
-      padding-top: 0px;
-      margin-top: 90%;
-      width: 100%;
-    }
-    .homeLeft h1 {
-      line-height: 45px;
-    }
-    
-    .hero {
-      right: 10%;
-      width: 80%;
-      top: 120px;
-    }
+  .homeLeft {
+    width: 60%;
   }
 
-  /* 1527 */
-  @media only screen and (max-width: 600px) and (min-width: 50px) {
-    .homeLeft {
-      
-      width: 100%;
-    }
-    .homeLeft h1 {
-      line-height: 45px;
-    }
+  .main-hero {
+    background-size: 100% 400px;
   }
+}
+
+@media only screen and (max-width: 1670px) and (min-width: 1600px) {
+  .main-hero {
+    background-size: 100% 400px;
+  }
+}
+
+
+/* 1100 */
+@media only screen and (max-width: 1670px) and (min-width: 1161px) {
+  .cstm-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 20%) !important;
+    font-size: 85%;
+  }
+}
+
+/* 1216 */
+@media only screen and (max-width: 1160px) and (min-width: 951px) {
+  .cstm-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    font-size: 85%;
+  }
+  .choose-us {
+    margin-top: 200px;
+  }
+}
+/* 1239 */
+@media only screen and (max-width: 1024px) and (min-width: 951px) {
+ 
+
+  .homeLeft {
+    width: 54%;
+  }
+  .homeLeft h1 {
+    line-height: 45px;
+  }
+  .hero {
+    margin-top: 127px;
+  }
+}
+/* 1299 */
+@media only screen and (max-width: 950px) and (min-width: 701px) {
+  .homeLeft {
+    width: 80%;
+    padding-left: 0px;
+    margin: auto;
+  }
+  .homeLeft h1 {
+    line-height: 45px;
+  }
+  .cstm-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 17%);
+    font-size: 85%;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 100%;
+    /* width: 80%; */
+  }
+  .hero {
+    right: 20%;
+    width: 60%;
+  }
+}
+/* 1353 */
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+  .cstm-grid {
+    display: grid;
+    column-gap: 5%;
+    grid-template-columns: repeat(3, 28%);
+    font-size: 85%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .homeLeft {
+    width: 100%;
+  }
+  .homeLeft h1 {
+    line-height: 45px;
+  }
+  .hero {
+    width: 80%;
+  }
+}
+/* 1433 */
+@media only screen and (max-width: 500px) and (min-width: 50px) {
+  .cstm-grid {
+    display: grid;
+    column-gap: 15%;
+    grid-template-columns: repeat(2, 35%);
+    font-size: 85%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .homeLeft {
+    width: 100%;
+  }
+  .homeLeft h1 {
+    line-height: 45px;
+  }
+
+  .hero {
+    right: 10%;
+    width: 80%;
+    top: 120px;
+  }
+}
+/* 1483 */
+@media only screen and (max-width: 400px) and (min-width: 50px) {
+  .cstm-grid {
+    display: grid;
+    column-gap: 15%;
+    grid-template-columns: repeat(2, 35%);
+    font-size: 85%;
+  }
+  .homeLeft {
+    width: 100%;
+  }
+  .homeLeft h1 {
+    line-height: 45px;
+  }
+
+  .hero {
+    right: 10%;
+    width: 80%;
+  }
+}
+
+/* 1527 */
+@media only screen and (max-width: 600px) and (min-width: 50px) {
+  .homeLeft {
+    width: 100%;
+  }
+  .homeLeft h1 {
+    line-height: 45px;
+  }
+  .main-hero {
+    background-size: 100% 250px;
+  }
+}
