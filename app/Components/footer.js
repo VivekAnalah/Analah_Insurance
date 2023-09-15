@@ -550,7 +550,7 @@ border: "1px solid rgba(255, 255, 255, 0.30)"}}>
                       target="_blank"
                     >
                       <img
-                        src={"/Images/instagramIcon.png"}
+                        src={"/Images/InstagramIcon.png"}
                         alt="instagram"
                         className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0"
                       />
