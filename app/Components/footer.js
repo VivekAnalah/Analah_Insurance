@@ -148,7 +148,7 @@ function Footer() {
                       target="_blank"
                     >
                       <img
-                        src={"/Images/Instagram1.png"}
+                        src={"/Images/InstagramIcon.png"}
                         alt="instagram"
                         className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0"
                       />
@@ -550,7 +550,7 @@ border: "1px solid rgba(255, 255, 255, 0.30)"}}>
                       target="_blank"
                     >
                       <img
-                        src={"/Images/instagram1.png"}
+                        src={"/Images/instagramIcon.png"}
                         alt="instagram"
                         className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0"
                       />
