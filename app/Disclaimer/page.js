@@ -27,17 +27,17 @@ function Disclaimer() {
 
           <section id="content2" className="tab-content text-justify">
             <p>
-            <p>
-              Analah Insurance aims to offer transparent and unbiased
-              information regarding our insurance products and services. All the
-              information provided is generic in nature. We strive to provide
-              accurate, correct and unbiased information to the best of our
-              ability. We disclaim all liability for any discrepancies or
-              omissions in the data published or presented on our website or
-              platform.
+              <p>
+                Analah Insurance aims to offer transparent and unbiased
+                information regarding our insurance products and services. All
+                the information provided is generic in nature. We strive to
+                provide accurate, correct and unbiased information to the best
+                of our ability. We disclaim all liability for any discrepancies
+                or omissions in the data published or presented on our website
+                or platform.
+              </p>
             </p>
-            </p>
-            
+
             <p>
               We do not intend to violate any ancillary or intellectual property
               rights. Information provided on our website or platform is subject

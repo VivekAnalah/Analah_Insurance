@@ -144,7 +144,7 @@ export default function Home() {
           src={"/Images/rightTriangle.png"}
           className="object-contain aspect-auto sm:w-[100px] w-[70px] absolute sm:top-[-3.5%] top-[-0.5%]  h-auto rotate-180"
         />
-        <div className="mt-[50px] mr-[8.5%] ml-[8.5%]"><About /></div>
+        <About />
       </div>
       <div className={"my-5 h-[10px] sm:my-8 sm:h-[10px]"} />
       <div className="relative mt-[50px]">
@@ -153,7 +153,7 @@ export default function Home() {
           src={"/Images/rightTriangle.png"}
           className="object-contain aspect-auto h-auto absolute right-0 sm:w-[100px] w-[70px] sm:top-[-5.5%] top-[-3%] "
         />
-        <div className="mr-[8.5%] ml-[8.5%] "><Values /></div>
+        <Values />
       </div>
 
       <div className="container-fluid mx-auto bg-[#E9F2FF]">

@@ -1,9 +1,9 @@
-
 import "../../Styles/chooseUs.css";
 
 function ChooseUs() {
   const IconsProps = "md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px] w-[30px]";
-  const iconsProps ="lg:w-[50px] lg:h-[50px] md:w-[45px] md:h-[45px] sm:w-[40px] sm:h-[40px] w-[35px]";
+  const iconsProps =
+    "lg:w-[50px] lg:h-[50px] md:w-[45px] md:h-[45px] sm:w-[40px] sm:h-[40px] w-[35px]";
 
   return (
     <div className=" w-[100%] pt-[50px] bg-[#f6fafe]  ChooseContainer">
@@ -12,13 +12,13 @@ function ChooseUs() {
       </div>
 
       <div className="content xl:w-[80%] lg:w-[900px] md:w-[600px] sm:w-[500px] w-[90%]">
-        <input type="radio" name="slider" defaultChecked={true}  id="home" />
-        <input type="radio" name="slider" defaultChecked={true} id="blog" />
+        <input type="radio" name="slider" defaultChecked={false} id="home" />
+        <input type="radio" name="slider" defaultChecked={false} id="blog" />
         <input type="radio" name="slider" defaultChecked={true} id="help" />
-        <input type="radio" name="slider" defaultChecked={true} id="code" />
+        <input type="radio" name="slider" defaultChecked={false} id="code" />
 
         <div className="list ">
-          <label for="home" class="home  ">
+          <label htmlFor="home" className="home">
             <div className="iconsDiv">
               <img
                 src={"/WhyChoose/calculator51.png"}
@@ -31,7 +31,7 @@ function ChooseUs() {
               <span>Calculate in Minutes</span>
             </div>
           </label>
-          <label for="blog" class="blog">
+          <label htmlFor="blog" className="blog">
             <div className="iconsDiv">
               <img
                 src={"/WhyChoose/partnership1.png"}
@@ -44,7 +44,7 @@ function ChooseUs() {
               <span>30+ Insurance Partners</span>
             </div>
           </label>
-          <label for="help" class="help">
+          <label htmlFor="help" className="help">
             <div className="iconsDiv">
               <img
                 src={"/WhyChoose/insurance81.png"}
@@ -58,7 +58,7 @@ function ChooseUs() {
             </div>
           </label>
 
-          <label for="code" class="code">
+          <label htmlFor="code" className="code">
             <div className="iconsDiv">
               <img
                 src={"/WhyChoose/claim1.png"}

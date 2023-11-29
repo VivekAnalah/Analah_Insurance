@@ -9,9 +9,9 @@ function FoundingTeam() {
 
   return (
     <div className="w-[100%] lg:pt-[80px] md:pt-[60px] pt-[40px] pb-[100px] bg-[#F2F9FF]">
-      <div class="topic pb-[5px] ">
+      <div className="topic pb-[5px] ">
         <span className="title-border-bottom"> Founding </span>{" "}
-        <sapn class="topic2">Team</sapn>
+        <sapn className="topic2">Team</sapn>
       </div>
 
       <div

@@ -1,4 +1,3 @@
-
 import "../../Styles/policyDetails.css";
 import Footer from "../footer";
 import KnowMore from "./knowMoreSection";
@@ -32,9 +31,9 @@ function PolicyDetails({
   quotes_link,
   helping_verb,
   no_benefit,
-  isRequired ,
-  whyRequired_head ,
-  whyRequired_Text ,
+  isRequired,
+  whyRequired_head,
+  whyRequired_Text,
   what,
   whatText,
   whatHeadingText,
@@ -46,17 +45,11 @@ function PolicyDetails({
   extra_data,
   gridTopRight,
   gridTopLeft,
-  button_overlap
-
+  button_overlap,
 }) {
-  
-
   const title = head;
   const myArr = title.split(" ");
   const subhadText = "lg:text-[16px] md:text-[12px] text-[14px]";
-  
-
- 
 
   return (
     <div>
@@ -98,47 +91,56 @@ function PolicyDetails({
             </div>
           </div>
           <div className="order-1 sm:order-2 flex flex-col items-center xl:ml-[10%] lg:ml-[5%]">
-          {img === "Travel_ins" ? (
+            {img === "Travel_ins" ? (
               <img
                 src={`/${img}.png`}
                 alt={head}
                 className=" lg:w-[400px] md:w-[350px] sm:w-[350px] w-[80%] xl:ml-[-50%] lg:ml-[-5%] "
               />
-            ) : img === "Group_ins" ? <> <img
-            src={`/${img}.png`}
-            alt={head}
-            className=" lg:w-[300px] sm:w-[250px] w-[60%] "
-          />  </> : (
+            ) : img === "Group_ins" ? (
+              <>
+                {" "}
+                <img
+                  src={`/${img}.png`}
+                  alt={head}
+                  className=" lg:w-[300px] sm:w-[250px] w-[60%] "
+                />{" "}
+              </>
+            ) : (
               <img
                 src={`/${img}.png`}
                 alt={head}
                 className=" lg:w-[320px] md:w-[250px] sm:w-[250px] w-[60%]"
               />
             )}
-           
           </div>
         </div>
       </div>
       <div className="flex justify-center items-center relative xl:top-[-80px] lg:top-[-80px] md:top-[-80px] sm:top-[-60px] top-[-60px] ">
-      {button_overlap ? <><div className="button_overlap text-center items-center h-[20px] absolute top-[0%] sm:mt-[0] mt-[15px]">
-          <a href={quotes_link} target="blank">
-            <QuoteButton quotes = {quotes}/>
-          </a>
-        </div></>: <><div className="text-center items-center h-[20px] absolute top-[0%] ">
-          <a href={quotes_link} target="blank">
-          <QuoteButton quotes = {quotes}/>
-          </a>
-        </div></>}
-        
-        
-        
+        {button_overlap ? (
+          <>
+            <div className="button_overlap text-center items-center h-[20px] absolute top-[0%] sm:mt-[0] mt-[15px]">
+              <a href={quotes_link} target="blank">
+                <QuoteButton quotes={quotes} />
+              </a>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="text-center items-center h-[20px] absolute top-[0%] ">
+              <a href={quotes_link} target="blank">
+                <QuoteButton quotes={quotes} />
+              </a>
+            </div>
+          </>
+        )}
       </div>
       <div className="relative top-[0px]">
         <div
           className="items-center  w-[100%] absolute lg:top-[-180px] md:top-[-150px] sm:top-[-120px] top-[-120px] lg:pl-[25%] lg:pr-[25%] md:pl-[20%] md:pr-[20%] sm:pl-[20%] sm:pr-[20%] pl-[5%] pr-[5%] "
           style={{ textAlign: "center" }}
         >
-          {myArr[0] === "Term"  ? (
+          {myArr[0] === "Term" ? (
             <h2 className="text-[#000000] text-center text-[16px]  md:text-[20px] sm:text-[18px] lg:text-[25px] xl:text-[28px] items-center">
               <span className="text-[#2A44A9] font-normal">{Ins_Text_1}</span>{" "}
               <span className="text-[#2A44A9] font-light">{Ins_Text_2}</span>{" "}
@@ -159,9 +161,7 @@ function PolicyDetails({
             background:
               "linear-gradient(-5.38deg, rgb(42, 68, 168) -107.1%, rgba(255, 255, 255, 0.06) 45.41%)",
           }}
-        >
-        
-        </div>
+        ></div>
       </div>
 
       {/* Know More Section */}
@@ -182,20 +182,20 @@ function PolicyDetails({
         key_feature_head={key_feature_head}
         keyTerms={keyTerms}
         car={car}
-        isRequired = {isRequired} 
-  whyRequired_head = {whyRequired_head}
-  whyRequired_Text ={whyRequired_Text}
-  what = {what}
-  whatText = {whatText}
-  whatHeadingText = {whatHeadingText}
-  whatDefinition = {whatDefinition}
-  gridHeader = {gridHeader}
-  gridText = {gridText}
-  document_data = {document_data}
-  add_ons_array = {add_ons_array}
-  extra_data = {extra_data}
-  gridTopRight = {gridTopRight}
-  gridTopLeft = {gridTopLeft} 
+        isRequired={isRequired}
+        whyRequired_head={whyRequired_head}
+        whyRequired_Text={whyRequired_Text}
+        what={what}
+        whatText={whatText}
+        whatHeadingText={whatHeadingText}
+        whatDefinition={whatDefinition}
+        gridHeader={gridHeader}
+        gridText={gridText}
+        document_data={document_data}
+        add_ons_array={add_ons_array}
+        extra_data={extra_data}
+        gridTopRight={gridTopRight}
+        gridTopLeft={gridTopLeft}
       />
       <div className="mt-[20px]">
         <Footer />

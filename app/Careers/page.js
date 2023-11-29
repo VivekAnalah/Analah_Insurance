@@ -10,8 +10,8 @@ function Careers() {
 
         <div className="bred">
           {/* Title */}
-          <h2 class="CareerHeader lg:text-[32px] sm:text-[28px] text-[24px] absolute lg:left-[28%] sm:left-[20%] left-[20%] sm:top-[40%] top-[15%]">
-            <span class=" title-border-bottom">Caree</span>rs
+          <h2 className="CareerHeader lg:text-[32px] sm:text-[28px] text-[24px] absolute lg:left-[28%] sm:left-[20%] left-[20%] sm:top-[40%] top-[15%]">
+            <span className=" title-border-bottom">Caree</span>rs
           </h2>
                  {/* ------------------------------------------------------------------------------------------ */}   
                   {/* Dotted Images */}

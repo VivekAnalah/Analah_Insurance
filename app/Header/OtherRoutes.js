@@ -1,21 +1,19 @@
 "use client";
 
-
 import Link from "next/link";
 import { useContext } from "react";
 import { Cheacked_Context } from "../../Context/Cheacked_Context";
 import { usePathname } from "next/navigation";
 import Auth from "./Auth";
 export default function OtherRoutes() {
-  
   const location = usePathname();
 
   const { navbarOpen } = useContext(Cheacked_Context);
   console.log(navbarOpen);
 
   const textStyles =
-  "text-[14px]  font-[400] hover:text-[#4C8CE7] text-[#808080]";
-  
+    "text-[14px]  font-[400] hover:text-[#4C8CE7] text-[#808080]";
+
   return (
     <>
       <div
@@ -27,9 +25,7 @@ export default function OtherRoutes() {
         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li className="nav-item">
             <Link href={"/"}>
-              <h2
-                className={`${location === "/" && "active"} ${textStyles} `}
-              >
+              <h2 className={`${location === "/" && "active"} ${textStyles} `}>
                 Insurance Products
               </h2>
             </Link>
@@ -37,7 +33,9 @@ export default function OtherRoutes() {
           <li className="nav-item">
             <Link href="/Raise-a-claim">
               <h2
-                className={`${textStyles} ${location === "/Raise-a-claim" && "active"}`}
+                className={`${textStyles} ${
+                  location === "/Raise-a-claim" && "active"
+                }`}
               >
                 Raise a Claim
               </h2>
@@ -47,7 +45,9 @@ export default function OtherRoutes() {
             <Link href={"/Become-a-PoSP"}>
               {" "}
               <h2
-                className={`${textStyles} ${location === "/Become-a-PoSP" && "active"}`}
+                className={`${textStyles} ${
+                  location === "/Become-a-PoSP" && "active"
+                }`}
               >
                 Become a PoSP with us
               </h2>

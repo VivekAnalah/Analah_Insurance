@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect } from "react";
 import Footer from "../Components/footer";
 import "../Styles/becomeAPosp.css";
@@ -37,8 +37,7 @@ export default function BecomePoSP() {
   }, []);
   return (
     <>
-         <div className="pb-4">
-        
+      <div className="pb-4">
         <div className="container-fluid containerStyle relative backgroundStylePosp">
           <div className="flex flex-col sm:flex-row  sm:pt-[50px] relative w-[90%] m-auto pb-[67px]">
             <div className="flex flex-col sm:w-[50%] w-[80%]  ml-[10%] m-auto  order-2 sm:order-1 sm:mt-[0px] mt-[45px] PospContentContainer">
@@ -97,51 +96,45 @@ export default function BecomePoSP() {
               </div>
             </div>
             {/* Left and Right Side Images */}
-           
           </div>
           <div className="absolute bottom-[0px] left-[0px]">
-              <img
-                src={"/Images/background_left.png"}
-                alt="left"
-                className="w-[80%] leftPospImage"
-              />
-            </div>
-            <div className="absolute  right-[0px] bottom-[0px] flex justify-end">
-              <img
-                src={"/Images/background_right.png"}
-                alt="right"
-                className="w-[60%] RightPospImage"
-              />
-            </div>
+            <img
+              src={"/Images/background_left.png"}
+              alt="left"
+              className="w-[80%] leftPospImage"
+            />
+          </div>
+          <div className="absolute  right-[0px] bottom-[0px] flex justify-end">
+            <img
+              src={"/Images/background_right.png"}
+              alt="right"
+              className="w-[60%] RightPospImage"
+            />
+          </div>
         </div>
 
         {/* Why Become a PoSP Section */}
         <div className="relative">
-         
-            <img
-              src={"/Images/partnerBg.png"}
-              className="sm:w-[100px] w-[0px] absolute top-[3%]"
-              alt=""
-            />
-     
-      
-            <img
-              src={"/Images/partnerBg.png"}
-              className="sm:w-[100px] w-[0px] absolute right-[0px] sm:top-[3%]"
-              alt=""
-            />
-        
+          <img
+            src={"/Images/partnerBg.png"}
+            className="sm:w-[100px] w-[0px] absolute top-[3%]"
+            alt=""
+          />
+
+          <img
+            src={"/Images/partnerBg.png"}
+            className="sm:w-[100px] w-[0px] absolute right-[0px] sm:top-[3%]"
+            alt=""
+          />
 
           <div className="pt-10 sm:ml-[8.5%] sm:mr-[8.5%] ml-[5%] mr-[5%] mx-auto ">
-
             <div>
-            <h2 className="textHeader1Lite pb-8 lg:pb-11 text-center ">
-              <span className="textHeader1">Why </span>become an
-              Analah Insurance PoSP?{" "}
-            </h2>
+              <h2 className="textHeader1Lite pb-8 lg:pb-11 text-center ">
+                <span className="textHeader1">Why </span>become an Analah
+                Insurance PoSP?{" "}
+              </h2>
             </div>
-          
-           
+
             <div className="flex sm:w-[90%] w-[100%] sm:ml-[50px] ml-[0%] gap-[5%]">
               <div className="lg:w-[285px] w-[250px] sm:block hidden h-[fit-content] sm:ml-[5%] ml-[0%] rounded-[19px] bg-[#eceff3] pb-[20px] sticky top-[80px]">
                 <div className="anchorParent">
@@ -175,9 +168,7 @@ export default function BecomePoSP() {
                       <div className="text-[#595959] text-[12px] font-400 text-start w-[95%]">
                         Simple Steps to Become an IRDAI PoSP
                       </div>
-                      <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]">
-
-                      </div>
+                      <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
                     </button>
                   </a>
                 </div>
@@ -271,10 +262,7 @@ export default function BecomePoSP() {
             </div>
 
             {/* <div className="my-8 flex  flex-col  items-center justify-center text-justify "></div> */}
-          
           </div>
-
-          
         </div>
       </div>
       <Footer />
